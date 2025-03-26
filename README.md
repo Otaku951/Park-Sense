@@ -1,2 +1,7 @@
-# Park-Sense
-Car Park Locator App for Comp3851A
+# ParkSense
+
+A new Flutter project.
+
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.
