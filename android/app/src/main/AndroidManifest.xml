@@ -5,7 +5,8 @@
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:label="ParkSense"
         tools:replace="android:label"
@@ -75,7 +76,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAjm7UWnZD5Z7kKnnp6lkQznv7AK_WgXZI"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCOq86HpnMd4r96mcUhLxrXNKyLHSrAT90"/>
+
 
 
     </application>

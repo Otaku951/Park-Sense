@@ -60,6 +60,21 @@ class CarParkInfoRecord extends FirestoreRecord {
   String get typeOfParkingSystem => _typeOfParkingSystem ?? '';
   bool hasTypeOfParkingSystem() => _typeOfParkingSystem != null;
 
+  // "currentLocation" field.
+  LatLng? _currentLocation;
+  LatLng? get currentLocation => _currentLocation;
+  bool hasCurrentLocation() => _currentLocation != null;
+
+  // "userLat" field.
+  double? _userLat;
+  double get userLat => _userLat ?? 0.0;
+  bool hasUserLat() => _userLat != null;
+
+  // "userLng" field.
+  double? _userLng;
+  double get userLng => _userLng ?? 0.0;
+  bool hasUserLng() => _userLng != null;
+
   void _initializeFields() {
     _carParkBasement = snapshotData['CarParkBasement'] as bool?;
     _carParkDecks = castToType<int>(snapshotData['CarParkDecks']);
@@ -70,6 +85,9 @@ class CarParkInfoRecord extends FirestoreRecord {
     _shortTermParking = snapshotData['ShortTermParking'] as bool?;
     _type = snapshotData['Type'] as String?;
     _typeOfParkingSystem = snapshotData['TypeOfParkingSystem'] as String?;
+    _currentLocation = snapshotData['currentLocation'] as LatLng?;
+    _userLat = castToType<double>(snapshotData['userLat']);
+    _userLng = castToType<double>(snapshotData['userLng']);
   }
 
   static CollectionReference get collection =>
@@ -116,6 +134,9 @@ Map<String, dynamic> createCarParkInfoRecordData({
   bool? shortTermParking,
   String? type,
   String? typeOfParkingSystem,
+  LatLng? currentLocation,
+  double? userLat,
+  double? userLng,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -128,6 +149,9 @@ Map<String, dynamic> createCarParkInfoRecordData({
       'ShortTermParking': shortTermParking,
       'Type': type,
       'TypeOfParkingSystem': typeOfParkingSystem,
+      'currentLocation': currentLocation,
+      'userLat': userLat,
+      'userLng': userLng,
     }.withoutNulls,
   );
 
@@ -147,7 +171,10 @@ class CarParkInfoRecordDocumentEquality implements Equality<CarParkInfoRecord> {
         e1?.nightParking == e2?.nightParking &&
         e1?.shortTermParking == e2?.shortTermParking &&
         e1?.type == e2?.type &&
-        e1?.typeOfParkingSystem == e2?.typeOfParkingSystem;
+        e1?.typeOfParkingSystem == e2?.typeOfParkingSystem &&
+        e1?.currentLocation == e2?.currentLocation &&
+        e1?.userLat == e2?.userLat &&
+        e1?.userLng == e2?.userLng;
   }
 
   @override
@@ -160,7 +187,10 @@ class CarParkInfoRecordDocumentEquality implements Equality<CarParkInfoRecord> {
         e?.nightParking,
         e?.shortTermParking,
         e?.type,
-        e?.typeOfParkingSystem
+        e?.typeOfParkingSystem,
+        e?.currentLocation,
+        e?.userLat,
+        e?.userLng
       ]);
 
   @override

@@ -648,6 +648,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
       'zh_Hans': '',
     },
+    'h5l76oxe': {
+      'en': 'The app needs to access your current location.',
+      'zh_Hans': '',
+    },
+    'duluw93t': {
+      'en':
+          'To obtain your location, access to your geographical position is required.',
+      'zh_Hans': '',
+    },
     '9e0unt7e': {
       'en': '',
       'zh_Hans': '',

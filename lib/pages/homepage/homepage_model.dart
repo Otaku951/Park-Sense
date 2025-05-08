@@ -5,6 +5,12 @@ import 'homepage_widget.dart' show HomepageWidget;
 import 'package:flutter/material.dart';
 
 class HomepageModel extends FlutterFlowModel<HomepageWidget> {
+  ///  Local state fields for this page.
+
+  double? userLat = 1.292536;
+
+  double? userLng = 103.857193;
+
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for GoogleMap widget.

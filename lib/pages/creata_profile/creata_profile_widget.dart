@@ -6,6 +6,8 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'creata_profile_model.dart';
 export 'creata_profile_model.dart';
 
@@ -108,11 +110,19 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    font: GoogleFonts.outfit(
+                                      fontWeight: FontWeight.normal,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .headlineMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF5C5C5C),
                                     fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .headlineMedium
+                                        .fontStyle,
                                   ),
                             ),
                           ),
@@ -246,18 +256,32 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                     'oaedgepi' /* Username */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
@@ -293,14 +317,30 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      font: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       color: Color(0xFF14181B),
                       fontSize: 14.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
                 validator: _model.useernameTextControllerValidator
                     .asValidator(context),
+                inputFormatters: [
+                  if (!isAndroid && !isiOS)
+                    TextInputFormatter.withFunction((oldValue, newValue) {
+                      return TextEditingValue(
+                        selection: newValue.selection,
+                        text: newValue.text
+                            .toCapitalization(TextCapitalization.words),
+                      );
+                    }),
+                ],
               ),
             ),
             Padding(
@@ -315,18 +355,32 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                     'x71qbljq' /* Display name */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
@@ -362,14 +416,30 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      font: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       color: Color(0xFF14181B),
                       fontSize: 14.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
                 validator:
                     _model.cityTextController1Validator.asValidator(context),
+                inputFormatters: [
+                  if (!isAndroid && !isiOS)
+                    TextInputFormatter.withFunction((oldValue, newValue) {
+                      return TextEditingValue(
+                        selection: newValue.selection,
+                        text: newValue.text
+                            .toCapitalization(TextCapitalization.words),
+                      );
+                    }),
+                ],
               ),
             ),
             Padding(
@@ -384,18 +454,32 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                     '1qhgc17q' /* Email */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
@@ -431,14 +515,30 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      font: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       color: Color(0xFF14181B),
                       fontSize: 14.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
                 validator:
                     _model.cityTextController2Validator.asValidator(context),
+                inputFormatters: [
+                  if (!isAndroid && !isiOS)
+                    TextInputFormatter.withFunction((oldValue, newValue) {
+                      return TextEditingValue(
+                        selection: newValue.selection,
+                        text: newValue.text
+                            .toCapitalization(TextCapitalization.words),
+                      );
+                    }),
+                ],
               ),
             ),
             Padding(
@@ -453,18 +553,32 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                     'alb08ekb' /* Password */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
@@ -500,14 +614,30 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      font: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       color: Color(0xFF14181B),
                       fontSize: 14.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
                 validator:
                     _model.cityTextController3Validator.asValidator(context),
+                inputFormatters: [
+                  if (!isAndroid && !isiOS)
+                    TextInputFormatter.withFunction((oldValue, newValue) {
+                      return TextEditingValue(
+                        selection: newValue.selection,
+                        text: newValue.text
+                            .toCapitalization(TextCapitalization.words),
+                      );
+                    }),
+                ],
               ),
             ),
             Padding(
@@ -522,18 +652,32 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                     'ow8049oh' /* Number */,
                   ),
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Plus Jakarta Sans',
+                        font: GoogleFonts.plusJakartaSans(
+                          fontWeight: FontWeight.normal,
+                          fontStyle: FlutterFlowTheme.of(context)
+                              .labelMedium
+                              .fontStyle,
+                        ),
                         color: Color(0xFF57636C),
                         fontSize: 14.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
@@ -569,14 +713,30 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                       EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Plus Jakarta Sans',
+                      font: GoogleFonts.plusJakartaSans(
+                        fontWeight: FontWeight.normal,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                      ),
                       color: Color(0xFF14181B),
                       fontSize: 14.0,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                     ),
                 validator:
                     _model.cityTextController4Validator.asValidator(context),
+                inputFormatters: [
+                  if (!isAndroid && !isiOS)
+                    TextInputFormatter.withFunction((oldValue, newValue) {
+                      return TextEditingValue(
+                        selection: newValue.selection,
+                        text: newValue.text
+                            .toCapitalization(TextCapitalization.words),
+                      );
+                    }),
+                ],
               ),
             ),
             Row(
@@ -598,9 +758,21 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFF728490),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Inter Tight',
+                          font: GoogleFonts.interTight(
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .fontStyle,
+                          ),
                           color: Color(0xFF020000),
                           letterSpacing: 0.0,
+                          fontWeight: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .fontWeight,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
                     borderSide: BorderSide(
@@ -624,8 +796,20 @@ class _CreataProfileWidgetState extends State<CreataProfileWidget> {
                         EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFFDAEF39),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Inter Tight',
+                          font: GoogleFonts.interTight(
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .titleSmall
+                                .fontStyle,
+                          ),
                           letterSpacing: 0.0,
+                          fontWeight: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .fontWeight,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).titleSmall.fontStyle,
                         ),
                     elevation: 0.0,
                     borderRadius: BorderRadius.circular(8.0),
