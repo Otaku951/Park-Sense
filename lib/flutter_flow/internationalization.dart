@@ -144,498 +144,542 @@ bool _isSupportedLocale(Locale locale) {
 }
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // Login
-  {
-    'bqg5yr6p': {
-      'en': 'ParkSense',
-      'zh_Hans': 'ParkSense',
-    },
-    'c7qc7dmg': {
-      'en': 'Log in',
-      'zh_Hans': '登录',
-    },
-    'auxj8g9e': {
-      'en': 'Fill out the information below in order to access your account.',
-      'zh_Hans': '填写以下信息以访问您的帐户。',
-    },
-    'sbqwl8rn': {
-      'en': 'Email',
-      'zh_Hans': '电子邮件',
-    },
-    'hb5y0qlo': {
-      'en': 'Password',
-      'zh_Hans': '密码',
-    },
-    'ed144x3d': {
-      'en': 'Sign In',
-      'zh_Hans': '登入',
-    },
-    'j3pvbp3q': {
-      'en': 'Remember me for one week',
-      'zh_Hans': '记住我一周',
-    },
-    'h3cjay68': {
-      'en': 'or sign in with',
-      'zh_Hans': '或使用以下方式登录',
-    },
-    '6x5273su': {
-      'en': 'Continue with Facebook',
-      'zh_Hans': '继续使用 Facebook',
-    },
-    'ptsgaogy': {
-      'en': 'Continue with Google',
-      'zh_Hans': '继续使用 Google',
-    },
-    'dyh5e5j5': {
-      'en': 'Don\'t have an account? \nForgot the password？\n            ',
-      'zh_Hans': '沒有帳戶？ \n忘记密碼？',
-    },
-    'egn8u7sx': {
-      'en': ' Sign Up here',
-      'zh_Hans': '在此注册',
-    },
-    's13wupw9': {
-      'en': 'Home',
-      'zh_Hans': '家',
-    },
-  },
   // Profile
   {
+    'teyyztpg': {
+      'en': 'Personal Information',
+      'zh_Hans': '',
+    },
     'ikvldhsh': {
       'en': 'Mr.Ou',
-      'zh_Hans': '欧先生',
+      'zh_Hans': '',
     },
     '46six8nq': {
       'en': 'Email Address@gmail.com',
-      'zh_Hans': '电子邮件地址@gmail.com',
+      'zh_Hans': '',
     },
     'bm4168ew': {
       'en': 'Parking History',
-      'zh_Hans': '停车历史记录',
+      'zh_Hans': '',
     },
     '3krggv3c': {
       'en': 'My bookings',
-      'zh_Hans': '我的预订',
+      'zh_Hans': '',
     },
     'ocb0fbb9': {
       'en': 'Change langugage',
-      'zh_Hans': '更改语言',
+      'zh_Hans': '',
     },
     'myqjrg5d': {
       'en': 'Security & Privacy',
-      'zh_Hans': '安全和隐私',
+      'zh_Hans': '',
     },
     'ixto3m96': {
       'en': 'Log Out',
-      'zh_Hans': '登出',
-    },
-    'teyyztpg': {
-      'en': 'Personal Information',
-      'zh_Hans': '个人信息',
+      'zh_Hans': '',
     },
     '9guo23y7': {
       'en': '__',
-      'zh_Hans': '__',
+      'zh_Hans': '',
     },
   },
-  // creataProfile
+  // EditProfile
   {
+    'cwcs8xz9': {
+      'en': 'Create your Profile',
+      'zh_Hans': '',
+    },
     'oaedgepi': {
       'en': 'Username',
-      'zh_Hans': '用户名',
+      'zh_Hans': '',
     },
     'x71qbljq': {
       'en': 'Display name',
-      'zh_Hans': '显示名称',
+      'zh_Hans': '',
     },
     '1qhgc17q': {
       'en': 'Email',
-      'zh_Hans': '电子邮件',
+      'zh_Hans': '',
     },
     'alb08ekb': {
       'en': 'Password',
-      'zh_Hans': '密码',
+      'zh_Hans': '',
     },
     'ow8049oh': {
       'en': 'Number',
-      'zh_Hans': '数字',
+      'zh_Hans': '',
     },
     'mwvjg2s5': {
       'en': 'Cancel',
-      'zh_Hans': '取消',
+      'zh_Hans': '',
     },
     'ilshakwl': {
       'en': 'Apply',
-      'zh_Hans': '申请',
-    },
-    'cwcs8xz9': {
-      'en': 'Create your Profile',
-      'zh_Hans': '创建您的个人资料',
+      'zh_Hans': '',
     },
   },
   // History
   {
+    'l788rk10': {
+      'en': 'Parking History',
+      'zh_Hans': '',
+    },
     'g2fteuc1': {
       'en': 'Sort by:',
-      'zh_Hans': '排序方式：',
+      'zh_Hans': '',
     },
     'bc1rjzw0': {
       'en': 'Select...',
-      'zh_Hans': '选择...',
+      'zh_Hans': '',
     },
     'xackenkj': {
       'en': 'Search...',
-      'zh_Hans': '搜索...',
+      'zh_Hans': '',
     },
     'mybjm5s8': {
       'en': 'Place',
-      'zh_Hans': '地方',
+      'zh_Hans': '',
     },
     '2irb52qy': {
       'en': 'Location',
-      'zh_Hans': '地点',
+      'zh_Hans': '',
     },
     '0d0blo1v': {
       'en': 'Availability',
-      'zh_Hans': '可用性',
+      'zh_Hans': '',
     },
     'z8t6avwu': {
       'en': 'More...',
-      'zh_Hans': '更多的...',
+      'zh_Hans': '',
     },
     'ril5tjo5': {
       'en': 'Mon. July 3rd',
-      'zh_Hans': '7 月 3 日星期一',
+      'zh_Hans': '',
     },
     'upaph011': {
       'en': 'PSB #: ',
-      'zh_Hans': '公共服务号码：',
+      'zh_Hans': '',
     },
     'mx1zuaed': {
       'en': '143A',
-      'zh_Hans': '143A',
+      'zh_Hans': '',
     },
     'rsugwmzo': {
       'en': '5.6km',
-      'zh_Hans': '5.6公里',
+      'zh_Hans': '',
     },
     'vj9zc5w2': {
       'en': 'Empty',
-      'zh_Hans': '空的',
+      'zh_Hans': '',
     },
     'ewh6cpp1': {
       'en': 'Details',
-      'zh_Hans': '细节',
+      'zh_Hans': '',
     },
     'xcglv18k': {
       'en': 'Wed. July 6rd',
-      'zh_Hans': '7 月 6 日星期三',
+      'zh_Hans': '',
     },
     '05ha0v6f': {
       'en': 'Bugis #: ',
-      'zh_Hans': '武吉士人 #:',
+      'zh_Hans': '',
     },
     'tsl6tv3j': {
       'en': '666A',
-      'zh_Hans': '666A',
+      'zh_Hans': '',
     },
     'o10nv6o8': {
       'en': '2km',
-      'zh_Hans': '2公里',
+      'zh_Hans': '',
     },
     'lvx6wcga': {
       'en': 'Full',
-      'zh_Hans': '满的',
+      'zh_Hans': '',
     },
     '44t5017s': {
       'en': 'Details',
-      'zh_Hans': '细节',
+      'zh_Hans': '',
     },
     'j29wtri8': {
       'en': 'Mon. July 10rd',
-      'zh_Hans': '7 月 10 日星期一',
+      'zh_Hans': '',
     },
     'vwmyf7zl': {
       'en': 'PSB #: ',
-      'zh_Hans': '公共服务号码：',
+      'zh_Hans': '',
     },
     'ggpsdnlx': {
       'en': '185A',
-      'zh_Hans': '185A',
+      'zh_Hans': '',
     },
     'nnxx8oqt': {
       'en': '3km',
-      'zh_Hans': '3公里',
+      'zh_Hans': '',
     },
     '6t95ndc7': {
       'en': '5 Lots',
-      'zh_Hans': '5 批',
+      'zh_Hans': '',
     },
     'kni4n1gz': {
       'en': 'Details',
-      'zh_Hans': '细节',
+      'zh_Hans': '',
     },
     'pllrtw8n': {
       'en': 'Mon. July 3rd',
-      'zh_Hans': '7 月 3 日星期一',
+      'zh_Hans': '',
     },
     'q2oc7k0e': {
       'en': 'PSB #: ',
-      'zh_Hans': '公共服务号码：',
+      'zh_Hans': '',
     },
     '0xvauomv': {
       'en': '888A',
-      'zh_Hans': '888A',
+      'zh_Hans': '',
     },
     '2q44z27y': {
       'en': '5km',
-      'zh_Hans': '5公里',
+      'zh_Hans': '',
     },
     'cy6864uc': {
       'en': '25 Lots',
-      'zh_Hans': '25 批',
+      'zh_Hans': '',
     },
     'ncbatdru': {
       'en': 'Details',
-      'zh_Hans': '细节',
-    },
-    'l788rk10': {
-      'en': 'Parking History',
-      'zh_Hans': '停车历史记录',
+      'zh_Hans': '',
     },
     '2wbutwxf': {
       'en': 'Home',
-      'zh_Hans': '家',
-    },
-  },
-  // CreateAccount
-  {
-    'dy8s0ed7': {
-      'en': 'Create an account',
-      'zh_Hans': '创建一个帐户',
-    },
-    'p0xhpe0g': {
-      'en': 'Let\'s get started by filling out the form below.',
-      'zh_Hans': '让我们从填写下面的表格开始。',
-    },
-    'c2xo3uy0': {
-      'en': 'Email',
-      'zh_Hans': '电子邮件',
-    },
-    'dt4ik8ay': {
-      'en': 'Password',
-      'zh_Hans': '密码',
-    },
-    'houk0jrz': {
-      'en': 'Confirm Password',
-      'zh_Hans': '确认密码',
-    },
-    '4ggiaz68': {
-      'en': 'Create',
-      'zh_Hans': '创造',
-    },
-    'e20wo2ms': {
-      'en': '——OR OTHER WAY TO CREATE——',
-      'zh_Hans': '——或者其他创作方式——',
-    },
-    '3zxvyr59': {
-      'en': 'Continue with Google',
-      'zh_Hans': '继续使用 Google',
-    },
-    'ks995pf3': {
-      'en': 'Continue with Facebook',
-      'zh_Hans': '继续使用 Facebook',
-    },
-    '3ctwyr6o': {
-      'en': 'Create Account',
-      'zh_Hans': '创建账户',
-    },
-    '7rnqammf': {
-      'en': 'Home',
-      'zh_Hans': '家',
+      'zh_Hans': '',
     },
   },
   // FAQsection
   {
+    'zbcj0z7w': {
+      'en': 'FAQ section',
+      'zh_Hans': '',
+    },
     'v6xlv7la': {
       'en': 'Welcome to FAQ section',
-      'zh_Hans': '欢迎来到常见问题解答部分',
+      'zh_Hans': '',
     },
     '6p1eqs5t': {
       'en': 'How can we help you?',
-      'zh_Hans': '我们能为您做什么？',
+      'zh_Hans': '',
     },
     'dlg8ndgb': {
       'en': ' Search Queshion',
-      'zh_Hans': '搜索问题',
+      'zh_Hans': '',
     },
     'eqwhv3uv': {
       'en': 'Review FAQ\'s below',
-      'zh_Hans': '查看以下常见问题解答',
+      'zh_Hans': '',
     },
     '2pq8sbjz': {
       'en':
           'Why I have been billed on days when                      \n I didn\'t drive?',
-      'zh_Hans': '为什么我在没有开车的日子也收到了账单？',
+      'zh_Hans': '',
     },
     'rlfmkulb': {
       'en': 'What happens if I forget to end my parking          \nsession?',
-      'zh_Hans': '如果我忘记结束停车会发生什么？',
+      'zh_Hans': '',
     },
     'zu7hmxwb': {
       'en': 'I believe I was charged double / overcharged      ',
-      'zh_Hans': '我觉得我被多收了钱',
+      'zh_Hans': '',
     },
     'v53ii24r': {
       'en': 'Feedback and Suggestions',
-      'zh_Hans': '反馈和建议',
+      'zh_Hans': '',
     },
     'bxg81dvg': {
       'en': 'Please enter your suggestions',
-      'zh_Hans': '请输入您的建议',
+      'zh_Hans': '',
     },
     'i8uausx4': {
       'en':
           'The more complete the information you fill in, the more likely the problem will be solved~',
-      'zh_Hans': '填写的信息越完整，问题越有可能得到解决~',
+      'zh_Hans': '',
     },
     'k3l1okh5': {
       'en': 'Submit',
-      'zh_Hans': '提交',
-    },
-    'zbcj0z7w': {
-      'en': 'FAQ section',
-      'zh_Hans': '常见问题解答部分',
+      'zh_Hans': '',
     },
     'baskka2x': {
       'en': 'Home',
-      'zh_Hans': '家',
+      'zh_Hans': '',
     },
   },
   // Carpark
   {
     'oeb5tc4v': {
       'en': 'Home',
-      'zh_Hans': '家',
+      'zh_Hans': '',
     },
   },
   // Homepage
   {
-    'pqvgzo3w': {
-      'en': 'Search for parking locations...',
-      'zh_Hans': '搜索停车位置...',
-    },
-    '7smdb3pd': {
-      'en': 'Nearby Car Parks',
-      'zh_Hans': '附近的停车场',
-    },
-    '82oncinq': {
-      'en': '1111',
-      'zh_Hans': '1111',
-    },
-    'tiuicrxz': {
-      'en': 'Total Lots',
-      'zh_Hans': '总手数',
-    },
-    'zjy3cm54': {
-      'en': '156',
-      'zh_Hans': '156',
-    },
-    '4bnc760o': {
-      'en': 'Available',
-      'zh_Hans': '可用的',
-    },
-    'y2ita7zc': {
-      'en': '43',
-      'zh_Hans': '43',
-    },
-    'pwrpybw3': {
-      'en': 'Type',
-      'zh_Hans': '类型',
-    },
-    'z2ecxfeh': {
-      'en': 'Covered',
-      'zh_Hans': '覆盖',
-    },
-    'k1q5wq3e': {
-      'en': '2222',
-      'zh_Hans': '2222',
-    },
-    'v3duk18y': {
-      'en': 'Total Lots',
-      'zh_Hans': '总手数',
-    },
-    '8o7qt4dx': {
-      'en': '400',
-      'zh_Hans': '400',
-    },
-    'dmh57zyr': {
-      'en': 'Available',
-      'zh_Hans': '可用的',
-    },
-    '8cnf2adb': {
-      'en': '127',
-      'zh_Hans': '127',
-    },
-    'qu7rfn50': {
-      'en': 'Type',
-      'zh_Hans': '类型',
-    },
-    '7ruvctrt': {
-      'en': 'Basement',
-      'zh_Hans': '地下室',
-    },
-    'ldl7l5ia': {
-      'en': '3333',
-      'zh_Hans': '3333',
-    },
-    'hmo4r3s8': {
-      'en': 'Total Lots',
-      'zh_Hans': '总手数',
-    },
-    '59oqj6gh': {
-      'en': '250',
-      'zh_Hans': '250',
-    },
-    '6ll9gqz8': {
-      'en': 'Available',
-      'zh_Hans': '可用的',
-    },
-    'mj7gzq2a': {
-      'en': '12',
-      'zh_Hans': '12',
-    },
-    'yv15r6nr': {
-      'en': 'Type',
-      'zh_Hans': '类型',
-    },
-    'e548k7l5': {
-      'en': 'Covered',
-      'zh_Hans': '覆盖',
-    },
     'zfnlzgfa': {
       'en': 'Homepage',
-      'zh_Hans': '主页',
+      'zh_Hans': '',
     },
     'gvjx7xgi': {
       'en': 'xxxxxxx@valorant.com',
-      'zh_Hans': 'xxxxxxx@valorant.com',
+      'zh_Hans': '',
     },
     'ajcs2aoy': {
       'en': 'Mr. Ou',
-      'zh_Hans': '欧先生',
+      'zh_Hans': '',
     },
     'tett0kpk': {
       'en': 'My Accounnt',
-      'zh_Hans': '我的帳戶',
+      'zh_Hans': '',
     },
     'v4lor71i': {
       'en': 'Parking History',
-      'zh_Hans': '停车历史记录',
+      'zh_Hans': '',
     },
     'kv094v1w': {
       'en': 'FAQ Section',
-      'zh_Hans': '常见问题解答部分',
+      'zh_Hans': '',
+    },
+    'pqvgzo3w': {
+      'en': 'Search for parking locations...',
+      'zh_Hans': '',
+    },
+    '7smdb3pd': {
+      'en': 'Nearby Car Parks',
+      'zh_Hans': '',
+    },
+    '82oncinq': {
+      'en': '1111',
+      'zh_Hans': '',
+    },
+    'tiuicrxz': {
+      'en': 'Total Lots',
+      'zh_Hans': '',
+    },
+    'zjy3cm54': {
+      'en': '156',
+      'zh_Hans': '',
+    },
+    '4bnc760o': {
+      'en': 'Available',
+      'zh_Hans': '',
+    },
+    'y2ita7zc': {
+      'en': '43',
+      'zh_Hans': '',
+    },
+    'pwrpybw3': {
+      'en': 'Type',
+      'zh_Hans': '',
+    },
+    'z2ecxfeh': {
+      'en': 'Covered',
+      'zh_Hans': '',
+    },
+    'k1q5wq3e': {
+      'en': '2222',
+      'zh_Hans': '',
+    },
+    'v3duk18y': {
+      'en': 'Total Lots',
+      'zh_Hans': '',
+    },
+    '8o7qt4dx': {
+      'en': '400',
+      'zh_Hans': '',
+    },
+    'dmh57zyr': {
+      'en': 'Available',
+      'zh_Hans': '',
+    },
+    '8cnf2adb': {
+      'en': '127',
+      'zh_Hans': '',
+    },
+    'qu7rfn50': {
+      'en': 'Type',
+      'zh_Hans': '',
+    },
+    '7ruvctrt': {
+      'en': 'Basement',
+      'zh_Hans': '',
+    },
+    'ldl7l5ia': {
+      'en': '3333',
+      'zh_Hans': '',
+    },
+    'hmo4r3s8': {
+      'en': 'Total Lots',
+      'zh_Hans': '',
+    },
+    '59oqj6gh': {
+      'en': '250',
+      'zh_Hans': '',
+    },
+    '6ll9gqz8': {
+      'en': 'Available',
+      'zh_Hans': '',
+    },
+    'mj7gzq2a': {
+      'en': '12',
+      'zh_Hans': '',
+    },
+    'yv15r6nr': {
+      'en': 'Type',
+      'zh_Hans': '',
+    },
+    'e548k7l5': {
+      'en': 'Covered',
+      'zh_Hans': '',
+    },
+  },
+  // RegisterPage
+  {
+    'sabkujwh': {
+      'en': 'ParkSense',
+      'zh_Hans': '',
+    },
+    '5v6e9kht': {
+      'en': 'Create an account',
+      'zh_Hans': '',
+    },
+    'm96cubko': {
+      'en': 'Let\'s get started by filling out the form below.',
+      'zh_Hans': '',
+    },
+    'xahnssln': {
+      'en': 'Email',
+      'zh_Hans': '',
+    },
+    '41kh37l8': {
+      'en': 'Password',
+      'zh_Hans': '',
+    },
+    'dtt6zg8r': {
+      'en': 'Confirm Password',
+      'zh_Hans': '',
+    },
+    'dsq1uwjc': {
+      'en': 'Create Account',
+      'zh_Hans': '',
+    },
+    '7nkm2gfb': {
+      'en': 'Or sign up with',
+      'zh_Hans': '',
+    },
+    '2fjmeh29': {
+      'en': 'Continue with Google',
+      'zh_Hans': '',
+    },
+    'hwvyledh': {
+      'en': 'Continue as Guest',
+      'zh_Hans': '',
+    },
+    'xskwu0ry': {
+      'en': 'Already have an account? ',
+      'zh_Hans': '',
+    },
+    'xffn2hqt': {
+      'en': 'Sign In here',
+      'zh_Hans': '',
+    },
+    'hszwzpwq': {
+      'en': 'Home',
+      'zh_Hans': '',
+    },
+  },
+  // LoginPage
+  {
+    'a7u7o94e': {
+      'en': 'ParkSense',
+      'zh_Hans': '',
+    },
+    '0uk977lr': {
+      'en': 'Get Started',
+      'zh_Hans': '',
+    },
+    '3ul5jq2t': {
+      'en': 'Let\'s get started by filling out the form below.',
+      'zh_Hans': '',
+    },
+    'yt0b5ppa': {
+      'en': 'Email',
+      'zh_Hans': '',
+    },
+    '2tguu8co': {
+      'en': 'Password',
+      'zh_Hans': '',
+    },
+    '7xdqmp9w': {
+      'en': 'Login',
+      'zh_Hans': '',
+    },
+    's1jfcind': {
+      'en': 'Or sign up with',
+      'zh_Hans': '',
+    },
+    'pn0gptmo': {
+      'en': 'Continue with Google',
+      'zh_Hans': '',
+    },
+    '9vfgek3u': {
+      'en': 'Continue as Guest',
+      'zh_Hans': '',
+    },
+    '8tos7byc': {
+      'en': 'Don\'t have an account?  ',
+      'zh_Hans': '',
+    },
+    'ehfe9qlg': {
+      'en': 'Sign Up here',
+      'zh_Hans': '',
+    },
+    'y63graat': {
+      'en': 'Forgot password? ',
+      'zh_Hans': '',
+    },
+    'j7pkagli': {
+      'en': 'Home',
+      'zh_Hans': '',
+    },
+  },
+  // ForgetPasswordPage
+  {
+    'jwi9maak': {
+      'en': 'Back',
+      'zh_Hans': '',
+    },
+    'bmyzehn0': {
+      'en': 'Back',
+      'zh_Hans': '',
+    },
+    'mmmsd896': {
+      'en': 'Forgot Password',
+      'zh_Hans': '',
+    },
+    'v6pt8w3j': {
+      'en':
+          'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
+      'zh_Hans': '',
+    },
+    'icb7wyon': {
+      'en': 'Your email address...',
+      'zh_Hans': '',
+    },
+    '372po031': {
+      'en': 'Enter your email...',
+      'zh_Hans': '',
+    },
+    '048nlg1q': {
+      'en': 'Send Link',
+      'zh_Hans': '',
+    },
+    '78ih1e1p': {
+      'en': 'Home',
+      'zh_Hans': '',
     },
   },
   // Miscellaneous

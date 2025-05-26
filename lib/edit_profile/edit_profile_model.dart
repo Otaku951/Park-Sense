@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'creata_profile_widget.dart' show CreataProfileWidget;
+import 'edit_profile_widget.dart' show EditProfileWidget;
 import 'package:flutter/material.dart';
 
-class CreataProfileModel extends FlutterFlowModel<CreataProfileWidget> {
+class EditProfileModel extends FlutterFlowModel<EditProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
   bool isDataUploading = false;

@@ -8,28 +8,28 @@ import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'creata_profile_model.dart';
-export 'creata_profile_model.dart';
+import 'edit_profile_model.dart';
+export 'edit_profile_model.dart';
 
-class CreataProfileWidget extends StatefulWidget {
-  const CreataProfileWidget({super.key});
+class EditProfileWidget extends StatefulWidget {
+  const EditProfileWidget({super.key});
 
-  static String routeName = 'creataProfile';
-  static String routePath = '/creataProfile';
+  static String routeName = 'EditProfile';
+  static String routePath = '/editProfile';
 
   @override
-  State<CreataProfileWidget> createState() => _CreataProfileWidgetState();
+  State<EditProfileWidget> createState() => _EditProfileWidgetState();
 }
 
-class _CreataProfileWidgetState extends State<CreataProfileWidget> {
-  late CreataProfileModel _model;
+class _EditProfileWidgetState extends State<EditProfileWidget> {
+  late EditProfileModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CreataProfileModel());
+    _model = createModel(context, () => EditProfileModel());
 
     _model.useernameTextController ??= TextEditingController();
     _model.useernameFocusNode ??= FocusNode();

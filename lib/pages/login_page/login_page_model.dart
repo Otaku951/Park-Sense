@@ -1,9 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'login_widget.dart' show LoginWidget;
+import 'login_page_widget.dart' show LoginPageWidget;
 import 'package:flutter/material.dart';
 
-class LoginModel extends FlutterFlowModel<LoginWidget> {
+class LoginPageModel extends FlutterFlowModel<LoginPageWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for emailAddress widget.
@@ -15,8 +15,6 @@ class LoginModel extends FlutterFlowModel<LoginWidget> {
   TextEditingController? passwordTextController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
-  // State field(s) for Checkbox widget.
-  bool? checkboxValue;
 
   @override
   void initState(BuildContext context) {

@@ -354,7 +354,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                         size: 24.0,
                       ),
                       onPressed: () async {
-                        context.pushNamed(CreataProfileWidget.routeName);
+                        context.pushNamed(EditProfileWidget.routeName);
                       },
                     ),
                   ),

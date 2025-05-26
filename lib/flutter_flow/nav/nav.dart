@@ -76,18 +76,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomepageWidget() : LoginWidget(),
+          appStateNotifier.loggedIn ? HomepageWidget() : LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? HomepageWidget() : LoginWidget(),
-        ),
-        FFRoute(
-          name: LoginWidget.routeName,
-          path: LoginWidget.routePath,
-          builder: (context, params) => LoginWidget(),
+              appStateNotifier.loggedIn ? HomepageWidget() : LoginPageWidget(),
         ),
         FFRoute(
           name: ProfileWidget.routeName,
@@ -95,19 +90,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ProfileWidget(),
         ),
         FFRoute(
-          name: CreataProfileWidget.routeName,
-          path: CreataProfileWidget.routePath,
-          builder: (context, params) => CreataProfileWidget(),
+          name: EditProfileWidget.routeName,
+          path: EditProfileWidget.routePath,
+          builder: (context, params) => EditProfileWidget(),
         ),
         FFRoute(
           name: HistoryWidget.routeName,
           path: HistoryWidget.routePath,
           builder: (context, params) => HistoryWidget(),
-        ),
-        FFRoute(
-          name: CreateAccountWidget.routeName,
-          path: CreateAccountWidget.routePath,
-          builder: (context, params) => CreateAccountWidget(),
         ),
         FFRoute(
           name: FAQsectionWidget.routeName,
@@ -123,6 +113,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: HomepageWidget.routeName,
           path: HomepageWidget.routePath,
           builder: (context, params) => HomepageWidget(),
+        ),
+        FFRoute(
+          name: RegisterPageWidget.routeName,
+          path: RegisterPageWidget.routePath,
+          builder: (context, params) => RegisterPageWidget(),
+        ),
+        FFRoute(
+          name: LoginPageWidget.routeName,
+          path: LoginPageWidget.routePath,
+          builder: (context, params) => LoginPageWidget(),
+        ),
+        FFRoute(
+          name: ForgetPasswordPageWidget.routeName,
+          path: ForgetPasswordPageWidget.routePath,
+          builder: (context, params) => ForgetPasswordPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -293,7 +298,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
-            return '/login';
+            return '/loginPage';
           }
           return null;
         },
