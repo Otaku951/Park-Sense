@@ -141,26 +141,6 @@ class _ProfileWidgetState extends State<ProfileWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation4': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          MoveEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.0, 60.0),
-            end: Offset(0.0, 0.0),
-          ),
-        ],
-      ),
     });
     setupAnimations(
       animationsMap.values.where((anim) =>
@@ -543,85 +523,6 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   color: FlutterFlowTheme.of(context).alternate,
                 ),
               ),
-              Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                child: Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(12.0),
-                    border: Border.all(
-                      color: Color(0xFFE0E3E7),
-                      width: 2.0,
-                    ),
-                  ),
-                  child: Card(
-                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                    color: FlutterFlowTheme.of(context).secondaryBackground,
-                    elevation: 0.0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                80.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'ocb0fbb9' /* Change langugage */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    font: GoogleFonts.inter(
-                                      fontWeight: FontWeight.normal,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .fontStyle,
-                                    ),
-                                    fontSize: 18.0,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FontWeight.normal,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .fontStyle,
-                                  ),
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
-                          child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                50.0, 0.0, 0.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                setAppLanguage(context, 'en');
-                                setAppLanguage(context, 'zh_Hans');
-                              },
-                              child: Icon(
-                                Icons.chevron_right,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                size: 28.0,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ).animateOnPageLoad(
-                    animationsMap['containerOnPageLoadAnimation3']!),
-              ),
               Opacity(
                 opacity: 0.0,
                 child: Divider(
@@ -706,7 +607,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                     ),
                   ),
                 ).animateOnPageLoad(
-                    animationsMap['containerOnPageLoadAnimation4']!),
+                    animationsMap['containerOnPageLoadAnimation3']!),
               ),
               Align(
                 alignment: AlignmentDirectional(0.0, 0.0),

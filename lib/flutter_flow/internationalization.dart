@@ -166,10 +166,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'My bookings',
       'zh_Hans': '',
     },
-    'ocb0fbb9': {
-      'en': 'Change langugage',
-      'zh_Hans': '',
-    },
     'myqjrg5d': {
       'en': 'Security & Privacy',
       'zh_Hans': '',
