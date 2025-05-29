@@ -1,9 +1,13 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_google_map.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'homepage_model.dart';
 export 'homepage_model.dart';
 
@@ -68,25 +72,6 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                 decoration: BoxDecoration(
                   color: Color(0xFFEECEEE),
                 ),
-                child: Align(
-                  alignment: AlignmentDirectional(0.0, 0.0),
-                  child: Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 30.0, 10.0),
-                    child: Container(
-                      width: 200.0,
-                      height: 200.0,
-                      clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                      ),
-                      child: Image.network(
-                        'https://c-ssl.duitang.com/uploads/blog/202209/27/20220927165227_6aa30.jpg',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ),
               ),
               Container(
                 width: 333.1,
@@ -102,8 +87,21 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                         'gvjx7xgi' /* xxxxxxx@valorant.com */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Inter',
+                            font: GoogleFonts.inter(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
                             letterSpacing: 0.0,
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
                     ),
                     Text(
@@ -111,8 +109,21 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                         'ajcs2aoy' /* Mr. Ou */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Inter',
+                            font: GoogleFonts.inter(
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
+                            ),
                             letterSpacing: 0.0,
+                            fontWeight: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontWeight,
+                            fontStyle: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .fontStyle,
                           ),
                     ),
                   ],
@@ -138,9 +149,22 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           'tett0kpk' /* My Accounnt */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               fontSize: 20.0,
                               letterSpacing: 0.0,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                       ),
                     ),
@@ -187,9 +211,22 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           'v4lor71i' /* Parking History */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               fontSize: 20.0,
                               letterSpacing: 0.0,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                       ),
                     ),
@@ -236,9 +273,22 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           'kv094v1w' /* FAQ Section */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               fontSize: 20.0,
                               letterSpacing: 0.0,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                       ),
                     ),
@@ -265,30 +315,29 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                   ),
                 ],
               ),
-              Opacity(
-                opacity: 0.0,
-                child: Divider(
-                  thickness: 2.0,
-                  color: FlutterFlowTheme.of(context).alternate,
-                ),
-              ),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8.0),
-                child: Image.network(
-                  '',
-                  width: 356.5,
-                  height: 391.1,
-                  fit: BoxFit.cover,
-                ),
-              ),
               Align(
                 alignment: AlignmentDirectional(1.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 10.0, 0.0),
-                  child: Icon(
-                    Icons.logout,
-                    color: FlutterFlowTheme.of(context).primaryText,
-                    size: 30.0,
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(0.0, 415.0, 10.0, 0.0),
+                  child: InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      GoRouter.of(context).prepareAuthEvent();
+                      await authManager.signOut();
+                      GoRouter.of(context).clearRedirectLocation();
+
+                      context.goNamedAuth(
+                          LoginPageWidget.routeName, context.mounted);
+                    },
+                    child: Icon(
+                      Icons.logout,
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      size: 30.0,
+                    ),
                   ),
                 ),
               ),
@@ -299,19 +348,34 @@ class _HomepageWidgetState extends State<HomepageWidget> {
       appBar: AppBar(
         backgroundColor: Color(0xFFB771F6),
         automaticallyImplyLeading: false,
+        leading: Icon(
+          Icons.location_on,
+          color: Colors.white,
+          size: 24.0,
+        ),
         title: Align(
           alignment: AlignmentDirectional(0.0, 0.0),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 0.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
             child: Text(
               FFLocalizations.of(context).getText(
                 'zfnlzgfa' /* Homepage */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
-                    fontFamily: 'Inter Tight',
+                    font: GoogleFonts.interTight(
+                      fontWeight: FlutterFlowTheme.of(context)
+                          .headlineMedium
+                          .fontWeight,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).headlineMedium.fontStyle,
+                    ),
                     color: Colors.white,
                     fontSize: 22.0,
                     letterSpacing: 0.0,
+                    fontWeight:
+                        FlutterFlowTheme.of(context).headlineMedium.fontWeight,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
             ),
           ),
@@ -332,7 +396,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                 onCameraIdle: (latLng) =>
                     safeSetState(() => _model.googleMapsCenter = latLng),
                 initialLocation: _model.googleMapsCenter ??=
-                    LatLng(37.4219999, -122.0840575),
+                    functions.createLatLng(_model.userLat, _model.userLng)!,
                 markerColor: GoogleMarkerColor.red,
                 mapType: MapType.normal,
                 style: GoogleMapStyle.standard,
@@ -409,11 +473,21 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
-                                            fontFamily: 'Manrope',
+                                            font: GoogleFonts.manrope(
+                                              fontWeight: FontWeight.w500,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyLarge
+                                                      .fontStyle,
+                                            ),
                                             color: Color(0xFF161C24),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyLarge
+                                                    .fontStyle,
                                           ),
                                       enabledBorder: InputBorder.none,
                                       focusedBorder: InputBorder.none,
@@ -423,11 +497,21 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Manrope',
+                                          font: GoogleFonts.manrope(
+                                            fontWeight: FontWeight.w500,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
                                           color: Color(0xFF161C24),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
                                         ),
                                     minLines: 1,
                                     validator: _model.textControllerValidator
@@ -458,11 +542,19 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
                               .override(
-                                fontFamily: 'Outfit',
+                                font: GoogleFonts.outfit(
+                                  fontWeight: FontWeight.w600,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .headlineSmall
+                                      .fontStyle,
+                                ),
                                 color: Color(0xFF161C24),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w600,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .headlineSmall
+                                    .fontStyle,
                               ),
                         ),
                         ListView(
@@ -522,11 +614,24 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       context)
                                                   .bodyLarge
                                                   .override(
-                                                    fontFamily: 'Manrope',
+                                                    font: GoogleFonts.manrope(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                    ),
                                                     color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyLarge
+                                                            .fontStyle,
                                                   ),
                                             ),
                                             Row(
@@ -548,35 +653,94 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
-                                                    Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'zjy3cm54' /* 156 */,
-                                                      ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Manrope',
-                                                            color: Color(
-                                                                0xFF161C24),
-                                                            fontSize: 14.0,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.w500,
+                                                    FutureBuilder<
+                                                        ApiCallResponse>(
+                                                      future:
+                                                          CarparkAvailabilityCall
+                                                              .call(),
+                                                      builder:
+                                                          (context, snapshot) {
+                                                        // Customize what your widget looks like when it's loading.
+                                                        if (!snapshot.hasData) {
+                                                          return Center(
+                                                            child: SizedBox(
+                                                              width: 40.0,
+                                                              height: 40.0,
+                                                              child:
+                                                                  CircularProgressIndicator(
+                                                                valueColor:
+                                                                    AlwaysStoppedAnimation<
+                                                                        Color>(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          );
+                                                        }
+                                                        final textCarparkAvailabilityResponse =
+                                                            snapshot.data!;
+
+                                                        return Text(
+                                                          FFLocalizations.of(
+                                                                  context)
+                                                              .getText(
+                                                            'zjy3cm54' /* 156 */,
                                                           ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                font: GoogleFonts
+                                                                    .manrope(
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w500,
+                                                                  fontStyle: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                                ),
+                                                                color: Color(
+                                                                    0xFF161C24),
+                                                                fontSize: 14.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w500,
+                                                                fontStyle: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                              ),
+                                                        );
+                                                      },
                                                     ),
                                                   ],
                                                 ),
@@ -596,14 +760,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -616,14 +794,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF27AE52),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -644,14 +836,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -664,14 +870,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF161C24),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -737,11 +957,24 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       context)
                                                   .bodyLarge
                                                   .override(
-                                                    fontFamily: 'Manrope',
+                                                    font: GoogleFonts.manrope(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                    ),
                                                     color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyLarge
+                                                            .fontStyle,
                                                   ),
                                             ),
                                             Row(
@@ -763,14 +996,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -783,14 +1030,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF161C24),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -811,14 +1072,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -831,14 +1106,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF27AE52),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -859,14 +1148,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -879,14 +1182,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF161C24),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -952,11 +1269,24 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       context)
                                                   .bodyLarge
                                                   .override(
-                                                    fontFamily: 'Manrope',
+                                                    font: GoogleFonts.manrope(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                    ),
                                                     color: Color(0xFF161C24),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyLarge
+                                                            .fontStyle,
                                                   ),
                                             ),
                                             Row(
@@ -978,14 +1308,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -998,14 +1342,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF161C24),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -1026,14 +1384,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -1046,14 +1418,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFFEE4444),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],
@@ -1074,14 +1460,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodySmall
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF636F81),
                                                             fontSize: 12.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                     Text(
@@ -1094,14 +1494,28 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                               .of(context)
                                                           .bodyMedium
                                                           .override(
-                                                            fontFamily:
-                                                                'Manrope',
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
                                                             color: Color(
                                                                 0xFF161C24),
                                                             fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
                                                           ),
                                                     ),
                                                   ],

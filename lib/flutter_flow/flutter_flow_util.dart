@@ -18,6 +18,7 @@ import '../main.dart';
 export 'lat_lng.dart';
 export 'place.dart';
 export 'uploaded_file.dart';
+export '../app_state.dart';
 export 'flutter_flow_model.dart';
 export 'dart:math' show min, max;
 export 'dart:typed_data' show Uint8List;
@@ -320,6 +321,19 @@ extension FFStringExt on String {
       maxChars != null && length > maxChars
           ? replaceRange(maxChars, null, replacement)
           : this;
+
+  String toCapitalization(TextCapitalization textCapitalization) {
+    switch (textCapitalization) {
+      case TextCapitalization.none:
+        return this;
+      case TextCapitalization.words:
+        return split(' ').map(toBeginningOfSentenceCase).join(' ');
+      case TextCapitalization.sentences:
+        return toBeginningOfSentenceCase(this);
+      case TextCapitalization.characters:
+        return toUpperCase();
+    }
+  }
 }
 
 extension ListFilterExt<T> on Iterable<T?> {

@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'f_a_qsection_model.dart';
 export 'f_a_qsection_model.dart';
 
@@ -111,11 +112,16 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
               'zbcj0z7w' /* FAQ section */,
             ),
             style: FlutterFlowTheme.of(context).titleLarge.override(
-                  fontFamily: 'Outfit',
+                  font: GoogleFonts.outfit(
+                    fontWeight: FontWeight.w500,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).titleLarge.fontStyle,
+                  ),
                   color: Color(0xFF15161E),
                   fontSize: 22.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w500,
+                  fontStyle: FlutterFlowTheme.of(context).titleLarge.fontStyle,
                 ),
           ),
           actions: [],
@@ -142,11 +148,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                           ),
                           style:
                               FlutterFlowTheme.of(context).labelLarge.override(
-                                    fontFamily: 'Outfit',
+                                    font: GoogleFonts.outfit(
+                                      fontWeight: FontWeight.w500,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelLarge
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF606A85),
                                     fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelLarge
+                                        .fontStyle,
                                   ),
                         ),
                         Padding(
@@ -159,11 +173,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font: GoogleFonts.outfit(
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .headlineMedium
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF15161E),
                                   fontSize: 24.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .headlineMedium
+                                      .fontStyle,
                                 ),
                           ),
                         ),
@@ -221,18 +243,30 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                                         .getText(
                                                   'dlg8ndgb' /*  Search Queshion */,
                                                 ),
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyLarge
-                                                        .override(
-                                                          fontFamily: 'Manrope',
-                                                          color:
-                                                              Color(0xFF161C24),
-                                                          fontSize: 15.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
+                                                hintStyle: FlutterFlowTheme.of(
+                                                        context)
+                                                    .bodyLarge
+                                                    .override(
+                                                      font: GoogleFonts.manrope(
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyLarge
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Color(0xFF161C24),
+                                                      fontSize: 15.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyLarge
+                                                              .fontStyle,
+                                                    ),
                                                 enabledBorder: InputBorder.none,
                                                 focusedBorder: InputBorder.none,
                                                 errorBorder: InputBorder.none,
@@ -243,11 +277,24 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Manrope',
+                                                    font: GoogleFonts.manrope(
+                                                      fontWeight:
+                                                          FontWeight.w500,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
                                                     color: Color(0xFF161C24),
                                                     fontSize: 14.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
                                                   ),
                                               minLines: 1,
                                               validator: _model
@@ -288,11 +335,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
-                                  fontFamily: 'Outfit',
+                                  font: GoogleFonts.outfit(
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelLarge
+                                        .fontStyle,
+                                  ),
                                   color: Color(0xFF606A85),
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .labelLarge
+                                      .fontStyle,
                                 ),
                           ),
                         ),
@@ -328,10 +383,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 ),
                                 Padding(
@@ -392,10 +456,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 ),
                                 Padding(
@@ -456,10 +529,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        font: GoogleFonts.inter(
+                                          fontWeight: FontWeight.bold,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .fontStyle,
+                                        ),
                                         fontSize: 12.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .fontStyle,
                                       ),
                                 ),
                                 Padding(
@@ -495,11 +577,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
-                                fontFamily: 'Outfit',
+                                font: GoogleFonts.outfit(
+                                  fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .headlineMedium
+                                      .fontStyle,
+                                ),
                                 color: Color(0xFF15161E),
                                 fontSize: 24.0,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .fontStyle,
                               ),
                         ),
                         Container(
@@ -533,9 +623,26 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Inter Tight',
+                                              font: GoogleFonts.interTight(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .fontStyle,
+                                              ),
                                               fontSize: 10.0,
                                               letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
                                             ),
                                         hintText:
                                             FFLocalizations.of(context).getText(
@@ -544,9 +651,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Inter',
+                                              font: GoogleFonts.inter(
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .labelMedium
+                                                      .fontStyle,
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
@@ -588,8 +705,25 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                       style: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Inter Tight',
+                                            font: GoogleFonts.interTight(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .titleSmall
+                                                      .fontStyle,
+                                            ),
                                             letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .fontStyle,
                                           ),
                                       textAlign: TextAlign.start,
                                       maxLines: null,
@@ -624,9 +758,19 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                       EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: Color(0x80EF3939),
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                        fontFamily: 'Inter Tight',
+                        font: GoogleFonts.interTight(
+                          fontWeight: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .fontWeight,
+                          fontStyle:
+                              FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                        ),
                         color: Color(0xAA181818),
                         letterSpacing: 0.0,
+                        fontWeight:
+                            FlutterFlowTheme.of(context).titleSmall.fontWeight,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).titleSmall.fontStyle,
                       ),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
