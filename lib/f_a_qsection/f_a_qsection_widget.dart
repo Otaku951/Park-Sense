@@ -67,9 +67,8 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
     );
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {
-          _model.textController2?.text = FFLocalizations.of(context).getText(
-            'i8uausx4' /* The more complete the informat... */,
-          );
+          _model.textController2?.text =
+              'The more complete the information you fill in, the more likely the problem will be solved~';
         }));
   }
 
@@ -108,9 +107,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
             },
           ),
           title: Text(
-            FFLocalizations.of(context).getText(
-              'zbcj0z7w' /* FAQ section */,
-            ),
+            'FAQ section',
             style: FlutterFlowTheme.of(context).titleLarge.override(
                   font: GoogleFonts.outfit(
                     fontWeight: FontWeight.w500,
@@ -143,9 +140,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          FFLocalizations.of(context).getText(
-                            'v6xlv7la' /* Welcome to FAQ section */,
-                          ),
+                          'Welcome to FAQ section',
                           style:
                               FlutterFlowTheme.of(context).labelLarge.override(
                                     font: GoogleFonts.outfit(
@@ -167,9 +162,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 4.0, 0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getText(
-                              '6p1eqs5t' /* How can we help you? */,
-                            ),
+                            'How can we help you?',
                             style: FlutterFlowTheme.of(context)
                                 .headlineMedium
                                 .override(
@@ -238,11 +231,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                               autofocus: false,
                                               obscureText: false,
                                               decoration: InputDecoration(
-                                                hintText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'dlg8ndgb' /*  Search Queshion */,
-                                                ),
+                                                hintText: ' Search Queshion',
                                                 hintStyle: FlutterFlowTheme.of(
                                                         context)
                                                     .bodyLarge
@@ -329,9 +318,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                           padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 12.0, 0.0, 4.0),
                           child: Text(
-                            FFLocalizations.of(context).getText(
-                              'eqwhv3uv' /* Review FAQ's below */,
-                            ),
+                            'Review FAQ\'s below',
                             style: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -377,9 +364,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  FFLocalizations.of(context).getText(
-                                    '2pq8sbjz' /* Why I have been billed on days... */,
-                                  ),
+                                  'Why I have been billed on days when                      \n I didn\'t drive?',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -450,9 +435,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  FFLocalizations.of(context).getText(
-                                    'rlfmkulb' /* What happens if I forget to en... */,
-                                  ),
+                                  'What happens if I forget to end my parking          \nsession?',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -523,9 +506,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  FFLocalizations.of(context).getText(
-                                    'zu7hmxwb' /* I believe I was charged double... */,
-                                  ),
+                                  'I believe I was charged double / overcharged      ',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -571,9 +552,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                           color: FlutterFlowTheme.of(context).alternate,
                         ),
                         Text(
-                          FFLocalizations.of(context).getText(
-                            'v53ii24r' /* Feedback and Suggestions */,
-                          ),
+                          'Feedback and Suggestions',
                           style: FlutterFlowTheme.of(context)
                               .headlineMedium
                               .override(
@@ -645,9 +624,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                                                       .fontStyle,
                                             ),
                                         hintText:
-                                            FFLocalizations.of(context).getText(
-                                          'bxg81dvg' /* Please enter your suggestions */,
-                                        ),
+                                            'Please enter your suggestions',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
@@ -747,9 +724,7 @@ class _FAQsectionWidgetState extends State<FAQsectionWidget>
                 onPressed: () {
                   print('Button pressed ...');
                 },
-                text: FFLocalizations.of(context).getText(
-                  'k3l1okh5' /* Submit */,
-                ),
+                text: 'Submit',
                 options: FFButtonOptions(
                   width: 355.0,
                   height: 40.0,

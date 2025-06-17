@@ -66,9 +66,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
           title: Align(
             alignment: AlignmentDirectional(-1.0, 0.0),
             child: Text(
-              FFLocalizations.of(context).getText(
-                'l788rk10' /* Parking History */,
-              ),
+              'Parking History',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     font: GoogleFonts.outfit(
                       fontWeight: FontWeight.w500,
@@ -98,9 +96,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(24.0, 10.0, 0.0, 0.0),
                   child: Text(
-                    FFLocalizations.of(context).getText(
-                      'g2fteuc1' /* Sort by: */,
-                    ),
+                    'Sort by:',
                     textAlign: TextAlign.start,
                     style: FlutterFlowTheme.of(context).labelMedium.override(
                           font: GoogleFonts.outfit(
@@ -124,20 +120,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                   child: FlutterFlowDropDown<String>(
                     controller: _model.dropDownValueController ??=
                         FormFieldController<String>(null),
-                    options: [
-                      FFLocalizations.of(context).getText(
-                        'mybjm5s8' /* Place */,
-                      ),
-                      FFLocalizations.of(context).getText(
-                        '2irb52qy' /* Location */,
-                      ),
-                      FFLocalizations.of(context).getText(
-                        '0d0blo1v' /* Availability */,
-                      ),
-                      FFLocalizations.of(context).getText(
-                        'z8t6avwu' /* More... */,
-                      )
-                    ],
+                    options: ['Place', 'Location', 'Availability', 'More...'],
                     onChanged: (val) =>
                         safeSetState(() => _model.dropDownValue = val),
                     width: 377.9,
@@ -158,9 +141,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
-                    hintText: FFLocalizations.of(context).getText(
-                      'bc1rjzw0' /* Select... */,
-                    ),
+                    hintText: 'Select...',
                     icon: Icon(
                       Icons.keyboard_arrow_down_rounded,
                       color: FlutterFlowTheme.of(context).secondaryText,
@@ -233,9 +214,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 4.0, 0.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'ril5tjo5' /* Mon. July 3rd */,
-                                          ),
+                                          'Mon. July 3rd',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
@@ -264,17 +243,11 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                         text: TextSpan(
                                           children: [
                                             TextSpan(
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                'upaph011' /* PSB #:  */,
-                                              ),
+                                              text: 'PSB #: ',
                                               style: TextStyle(),
                                             ),
                                             TextSpan(
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                'mx1zuaed' /* 143A */,
-                                              ),
+                                              text: '143A',
                                               style: TextStyle(
                                                 color: Color(0xFF6F61EF),
                                                 fontWeight: FontWeight.bold,
@@ -325,10 +298,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(7.0, 0.0, 7.0, 0.0),
                                               child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'rsugwmzo' /* 5.6km */,
-                                                ),
+                                                '5.6km',
                                                 style: FlutterFlowTheme.of(
                                                         context)
                                                     .labelMedium
@@ -369,9 +339,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 12.0),
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'vj9zc5w2' /* Empty */,
-                                        ),
+                                        'Empty',
                                         textAlign: TextAlign.end,
                                         style: FlutterFlowTheme.of(context)
                                             .headlineSmall
@@ -416,10 +384,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'ewh6cpp1' /* Details */,
-                                              ),
+                                              'Details',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -506,9 +471,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 4.0, 0.0, 0.0),
                                   child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'xcglv18k' /* Wed. July 6rd */,
-                                    ),
+                                    'Wed. July 6rd',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -535,17 +498,11 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          '05ha0v6f' /* Bugis #:  */,
-                                        ),
+                                        text: 'Bugis #: ',
                                         style: TextStyle(),
                                       ),
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'tsl6tv3j' /* 666A */,
-                                        ),
+                                        text: '666A',
                                         style: TextStyle(
                                           color: Color(0xFF6F61EF),
                                           fontWeight: FontWeight.bold,
@@ -592,9 +549,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             7.0, 0.0, 7.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'o10nv6o8' /* 2km */,
-                                          ),
+                                          '2km',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
@@ -631,9 +586,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'lvx6wcga' /* Full */,
-                                  ),
+                                  'Full',
                                   textAlign: TextAlign.end,
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -674,9 +627,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '44t5017s' /* Details */,
-                                        ),
+                                        'Details',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -755,9 +706,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 4.0, 0.0, 0.0),
                                   child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'j29wtri8' /* Mon. July 10rd */,
-                                    ),
+                                    'Mon. July 10rd',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -784,17 +733,11 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'vwmyf7zl' /* PSB #:  */,
-                                        ),
+                                        text: 'PSB #: ',
                                         style: TextStyle(),
                                       ),
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'ggpsdnlx' /* 185A */,
-                                        ),
+                                        text: '185A',
                                         style: TextStyle(
                                           color: Color(0xFF6F61EF),
                                           fontWeight: FontWeight.bold,
@@ -841,9 +784,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             7.0, 0.0, 7.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            'nnxx8oqt' /* 3km */,
-                                          ),
+                                          '3km',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
@@ -880,9 +821,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    '6t95ndc7' /* 5 Lots */,
-                                  ),
+                                  '5 Lots',
                                   textAlign: TextAlign.end,
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -923,9 +862,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'kni4n1gz' /* Details */,
-                                        ),
+                                        'Details',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -1004,9 +941,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 4.0, 0.0, 0.0),
                                   child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'pllrtw8n' /* Mon. July 3rd */,
-                                    ),
+                                    'Mon. July 3rd',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(
@@ -1033,17 +968,11 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'q2oc7k0e' /* PSB #:  */,
-                                        ),
+                                        text: 'PSB #: ',
                                         style: TextStyle(),
                                       ),
                                       TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          '0xvauomv' /* 888A */,
-                                        ),
+                                        text: '888A',
                                         style: TextStyle(
                                           color: Color(0xFF6F61EF),
                                           fontWeight: FontWeight.bold,
@@ -1090,9 +1019,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             7.0, 0.0, 7.0, 0.0),
                                         child: Text(
-                                          FFLocalizations.of(context).getText(
-                                            '2q44z27y' /* 5km */,
-                                          ),
+                                          '5km',
                                           style: FlutterFlowTheme.of(context)
                                               .labelMedium
                                               .override(
@@ -1129,9 +1056,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 12.0),
                                 child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'cy6864uc' /* 25 Lots */,
-                                  ),
+                                  '25 Lots',
                                   textAlign: TextAlign.end,
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -1172,9 +1097,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           12.0, 0.0, 12.0, 0.0),
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'ncbatdru' /* Details */,
-                                        ),
+                                        'Details',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(

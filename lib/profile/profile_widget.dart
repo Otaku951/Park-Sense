@@ -198,9 +198,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Text(
-                      FFLocalizations.of(context).getText(
-                        'teyyztpg' /* Personal Information */,
-                      ),
+                      'Personal Information',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.inter(
                               fontWeight: FontWeight.w600,
@@ -262,9 +260,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                FFLocalizations.of(context).getText(
-                                  'ikvldhsh' /* Mr.Ou */,
-                                ),
+                                'Mr.Ou',
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
@@ -287,9 +283,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    '46six8nq' /* Email Address@gmail.com */,
-                                  ),
+                                  'Email Address@gmail.com',
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
@@ -377,9 +371,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 90.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              FFLocalizations.of(context).getText(
-                                'bm4168ew' /* Parking History */,
-                              ),
+                              'Parking History',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -466,9 +458,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 98.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              FFLocalizations.of(context).getText(
-                                '3krggv3c' /* My bookings */,
-                              ),
+                              'My bookings',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -523,14 +513,6 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   color: FlutterFlowTheme.of(context).alternate,
                 ),
               ),
-              Opacity(
-                opacity: 0.0,
-                child: Divider(
-                  height: 30.0,
-                  thickness: 2.0,
-                  color: FlutterFlowTheme.of(context).alternate,
-                ),
-              ),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                 child: Container(
@@ -560,9 +542,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 80.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              FFLocalizations.of(context).getText(
-                                'myqjrg5d' /* Security & Privacy */,
-                              ),
+                              'Security & Privacy',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
@@ -620,9 +600,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                       onPressed: () {
                         print('Button pressed ...');
                       },
-                      text: FFLocalizations.of(context).getText(
-                        'ixto3m96' /* Log Out */,
-                      ),
+                      text: 'Log Out',
                       options: FFButtonOptions(
                         width: 240.0,
                         height: 60.0,

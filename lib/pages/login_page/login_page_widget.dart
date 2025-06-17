@@ -128,9 +128,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                           ),
                           alignment: AlignmentDirectional(0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getText(
-                              'a7u7o94e' /* ParkSense */,
-                            ),
+                            'ParkSense',
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
@@ -181,9 +179,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text(
-                                    FFLocalizations.of(context).getText(
-                                      '0uk977lr' /* Get Started */,
-                                    ),
+                                    'Get Started',
                                     textAlign: TextAlign.center,
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
@@ -209,9 +205,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 24.0),
                                     child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        '3ul5jq2t' /* Let's get started by filling o... */,
-                                      ),
+                                      'Let\'s get started by filling out the form below.',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
@@ -247,10 +241,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: FFLocalizations.of(context)
-                                              .getText(
-                                            'yt0b5ppa' /* Email */,
-                                          ),
+                                          labelText: 'Email',
                                           labelStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelLarge
@@ -349,10 +340,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         autofillHints: [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
-                                          labelText: FFLocalizations.of(context)
-                                              .getText(
-                                            '2tguu8co' /* Password */,
-                                          ),
+                                          labelText: 'Password',
                                           labelStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelLarge
@@ -474,9 +462,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        '7xdqmp9w' /* Login */,
-                                      ),
+                                      text: 'Login',
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 44.0,
@@ -519,9 +505,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 24.0),
                                     child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        's1jfcind' /* Or sign up with */,
-                                      ),
+                                      'Or sign up with',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge
@@ -560,9 +544,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        'pn0gptmo' /* Continue with Google */,
-                                      ),
+                                      text: 'Continue with Google',
                                       icon: FaIcon(
                                         FontAwesomeIcons.google,
                                         size: 20.0,
@@ -622,9 +604,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        '9vfgek3u' /* Continue as Guest */,
-                                      ),
+                                      text: 'Continue as Guest',
                                       icon: Icon(
                                         Icons.person_sharp,
                                         size: 20.0,
@@ -691,18 +671,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             children: [
                                               TextSpan(
                                                 text:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '8tos7byc' /* Don't have an account?   */,
-                                                ),
+                                                    'Don\'t have an account?  ',
                                                 style: TextStyle(),
                                               ),
                                               TextSpan(
-                                                text:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'ehfe9qlg' /* Sign Up here */,
-                                                ),
+                                                text: 'Sign Up here',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMedium
@@ -770,9 +743,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             ForgetPasswordPageWidget.routeName);
                                       },
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          'y63graat' /* Forgot password?  */,
-                                        ),
+                                        'Forgot password? ',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(

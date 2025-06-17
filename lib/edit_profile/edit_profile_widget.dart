@@ -103,9 +103,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 35.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              FFLocalizations.of(context).getText(
-                                'cwcs8xz9' /* Create your Profile */,
-                              ),
+                              'Create your Profile',
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
@@ -168,7 +166,8 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                       if (selectedMedia != null &&
                           selectedMedia.every((m) =>
                               validateFileFormat(m.storagePath, context))) {
-                        safeSetState(() => _model.isDataUploading = true);
+                        safeSetState(
+                            () => _model.isDataUploading_uploadData1mc = true);
                         var selectedUploadedFiles = <FFUploadedFile>[];
 
                         var downloadUrls = <String>[];
@@ -199,15 +198,16 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                               .toList();
                         } finally {
                           ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                          _model.isDataUploading = false;
+                          _model.isDataUploading_uploadData1mc = false;
                         }
                         if (selectedUploadedFiles.length ==
                                 selectedMedia.length &&
                             downloadUrls.length == selectedMedia.length) {
                           safeSetState(() {
-                            _model.uploadedLocalFile =
+                            _model.uploadedLocalFile_uploadData1mc =
                                 selectedUploadedFiles.first;
-                            _model.uploadedFileUrl = downloadUrls.first;
+                            _model.uploadedFileUrl_uploadData1mc =
+                                downloadUrls.first;
                           });
                           showUploadMessage(context, 'Success!');
                         } else {
@@ -252,9 +252,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    'oaedgepi' /* Username */,
-                  ),
+                  labelText: 'Username',
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
@@ -351,9 +349,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    'x71qbljq' /* Display name */,
-                  ),
+                  labelText: 'Display name',
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
@@ -450,9 +446,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    '1qhgc17q' /* Email */,
-                  ),
+                  labelText: 'Email',
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
@@ -549,9 +543,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    'alb08ekb' /* Password */,
-                  ),
+                  labelText: 'Password',
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
@@ -648,9 +640,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    'ow8049oh' /* Number */,
-                  ),
+                  labelText: 'Number',
                   labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.normal,
@@ -747,9 +737,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   onPressed: () async {
                     context.pushNamed(ProfileWidget.routeName);
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'mwvjg2s5' /* Cancel */,
-                  ),
+                  text: 'Cancel',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:
@@ -785,9 +773,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                   onPressed: () async {
                     context.pushNamed(ProfileWidget.routeName);
                   },
-                  text: FFLocalizations.of(context).getText(
-                    'ilshakwl' /* Apply */,
-                  ),
+                  text: 'Apply',
                   options: FFButtonOptions(
                     height: 40.0,
                     padding:

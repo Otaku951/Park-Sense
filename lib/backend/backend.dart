@@ -7,6 +7,7 @@ import 'schema/util/firestore_util.dart';
 
 import 'schema/car_park_info_record.dart';
 import 'schema/user_info_record.dart';
+import 'schema/photos_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -17,6 +18,7 @@ export 'schema/util/schema_util.dart';
 
 export 'schema/car_park_info_record.dart';
 export 'schema/user_info_record.dart';
+export 'schema/photos_record.dart';
 
 /// Functions to query CarParkInfoRecords (as a Stream and as a Future).
 Future<int> queryCarParkInfoRecordCount({
@@ -87,6 +89,43 @@ Future<List<UserInfoRecord>> queryUserInfoRecordOnce({
     queryCollectionOnce(
       UserInfoRecord.collection,
       UserInfoRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query PhotosRecords (as a Stream and as a Future).
+Future<int> queryPhotosRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      PhotosRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<PhotosRecord>> queryPhotosRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      PhotosRecord.collection,
+      PhotosRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<PhotosRecord>> queryPhotosRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      PhotosRecord.collection,
+      PhotosRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

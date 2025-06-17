@@ -83,9 +83,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Text(
-                      FFLocalizations.of(context).getText(
-                        'gvjx7xgi' /* xxxxxxx@valorant.com */,
-                      ),
+                      'xxxxxxx@valorant.com',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.inter(
                               fontWeight: FlutterFlowTheme.of(context)
@@ -105,9 +103,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           ),
                     ),
                     Text(
-                      FFLocalizations.of(context).getText(
-                        'ajcs2aoy' /* Mr. Ou */,
-                      ),
+                      'Mr. Ou',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             font: GoogleFonts.inter(
                               fontWeight: FlutterFlowTheme.of(context)
@@ -145,9 +141,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        FFLocalizations.of(context).getText(
-                          'tett0kpk' /* My Accounnt */,
-                        ),
+                        'My Accounnt',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -207,9 +201,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        FFLocalizations.of(context).getText(
-                          'v4lor71i' /* Parking History */,
-                        ),
+                        'Parking History',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -269,9 +261,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        FFLocalizations.of(context).getText(
-                          'kv094v1w' /* FAQ Section */,
-                        ),
+                        'FAQ Section',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -358,9 +348,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
             child: Text(
-              FFLocalizations.of(context).getText(
-                'zfnlzgfa' /* Homepage */,
-              ),
+              'Homepage',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     font: GoogleFonts.interTight(
                       fontWeight: FlutterFlowTheme.of(context)
@@ -467,9 +455,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       hintText:
-                                          FFLocalizations.of(context).getText(
-                                        'pqvgzo3w' /* Search for parking locations..... */,
-                                      ),
+                                          'Search for parking locations...',
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
                                           .override(
@@ -536,9 +522,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           ),
                         ),
                         Text(
-                          FFLocalizations.of(context).getText(
-                            '7smdb3pd' /* Nearby Car Parks */,
-                          ),
+                          'Nearby Car Parks',
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
                               .override(
@@ -606,10 +590,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                '82oncinq' /* 1111 */,
-                                              ),
+                                              '1111',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyLarge
@@ -644,11 +625,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'tiuicrxz' /* Total Lots */,
-                                                      ),
+                                                      'Total Lots',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -707,11 +684,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                             snapshot.data!;
 
                                                         return Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            'zjy3cm54' /* 156 */,
-                                                          ),
+                                                          '156',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyMedium
@@ -751,11 +724,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '4bnc760o' /* Available */,
-                                                      ),
+                                                      'Available',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -785,11 +754,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'y2ita7zc' /* 43 */,
-                                                      ),
+                                                      '43',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -827,11 +792,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'pwrpybw3' /* Type */,
-                                                      ),
+                                                      'Type',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -861,11 +822,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'z2ecxfeh' /* Covered */,
-                                                      ),
+                                                      'Covered',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -949,10 +906,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'k1q5wq3e' /* 2222 */,
-                                              ),
+                                              '2222',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyLarge
@@ -987,11 +941,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'v3duk18y' /* Total Lots */,
-                                                      ),
+                                                      'Total Lots',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1021,11 +971,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '8o7qt4dx' /* 400 */,
-                                                      ),
+                                                      '400',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1063,11 +1009,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'dmh57zyr' /* Available */,
-                                                      ),
+                                                      'Available',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1097,11 +1039,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '8cnf2adb' /* 127 */,
-                                                      ),
+                                                      '127',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1139,11 +1077,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'qu7rfn50' /* Type */,
-                                                      ),
+                                                      'Type',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1173,11 +1107,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '7ruvctrt' /* Basement */,
-                                                      ),
+                                                      'Basement',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1261,10 +1191,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'ldl7l5ia' /* 3333 */,
-                                              ),
+                                              '3333',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyLarge
@@ -1299,11 +1226,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'hmo4r3s8' /* Total Lots */,
-                                                      ),
+                                                      'Total Lots',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1333,11 +1256,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '59oqj6gh' /* 250 */,
-                                                      ),
+                                                      '250',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1375,11 +1294,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        '6ll9gqz8' /* Available */,
-                                                      ),
+                                                      'Available',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1409,11 +1324,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'mj7gzq2a' /* 12 */,
-                                                      ),
+                                                      '12',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
@@ -1451,11 +1362,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                       CrossAxisAlignment.start,
                                                   children: [
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'yv15r6nr' /* Type */,
-                                                      ),
+                                                      'Type',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodySmall
@@ -1485,11 +1392,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                           ),
                                                     ),
                                                     Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'e548k7l5' /* Covered */,
-                                                      ),
+                                                      'Covered',
                                                       style: FlutterFlowTheme
                                                               .of(context)
                                                           .bodyMedium
