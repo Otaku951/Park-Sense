@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -131,9 +132,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                           ),
                           alignment: AlignmentDirectional(0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getText(
-                              'sabkujwh' /* ParkSense */,
-                            ),
+                            'ParkSense',
                             style: FlutterFlowTheme.of(context)
                                 .displaySmall
                                 .override(
@@ -184,9 +183,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    FFLocalizations.of(context).getText(
-                                      '5v6e9kht' /* Create an account */,
-                                    ),
+                                    'Create an account',
                                     style: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
@@ -211,9 +208,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 24.0),
                                     child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'm96cubko' /* Let's get started by filling o... */,
-                                      ),
+                                      'Let\'s get started by filling out the form below.',
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
@@ -248,10 +243,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                         autofillHints: [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
-                                          labelText: FFLocalizations.of(context)
-                                              .getText(
-                                            'xahnssln' /* Email */,
-                                          ),
+                                          labelText: 'Email',
                                           labelStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
@@ -350,10 +342,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                         autofillHints: [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
-                                          labelText: FFLocalizations.of(context)
-                                              .getText(
-                                            '41kh37l8' /* Password */,
-                                          ),
+                                          labelText: 'Password',
                                           labelStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
@@ -468,10 +457,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                         obscureText:
                                             !_model.passwordConfirmVisibility,
                                         decoration: InputDecoration(
-                                          labelText: FFLocalizations.of(context)
-                                              .getText(
-                                            'dtt6zg8r' /* Confirm Password */,
-                                          ),
+                                          labelText: 'Confirm Password',
                                           labelStyle: FlutterFlowTheme.of(
                                                   context)
                                               .labelMedium
@@ -606,13 +592,18 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                           return;
                                         }
 
+                                        await UserInfoRecord.collection
+                                            .doc(user.uid)
+                                            .update(createUserInfoRecordData(
+                                              photoUrl:
+                                                  'https://cdn-icons-png.flaticon.com/512/149/149071.png',
+                                            ));
+
                                         context.goNamedAuth(
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        'dsq1uwjc' /* Create Account */,
-                                      ),
+                                      text: 'Create Account',
                                       options: FFButtonOptions(
                                         width: 370.0,
                                         height: 44.0,
@@ -657,9 +648,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 24.0),
                                       child: Text(
-                                        FFLocalizations.of(context).getText(
-                                          '7nkm2gfb' /* Or sign up with */,
-                                        ),
+                                        'Or sign up with',
                                         textAlign: TextAlign.center,
                                         style: FlutterFlowTheme.of(context)
                                             .labelLarge
@@ -699,9 +688,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        '2fjmeh29' /* Continue with Google */,
-                                      ),
+                                      text: 'Continue with Google',
                                       icon: FaIcon(
                                         FontAwesomeIcons.google,
                                         size: 20.0,
@@ -761,9 +748,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                             HomepageWidget.routeName,
                                             context.mounted);
                                       },
-                                      text: FFLocalizations.of(context).getText(
-                                        'hwvyledh' /* Continue as Guest */,
-                                      ),
+                                      text: 'Continue as Guest',
                                       icon: Icon(
                                         Icons.person_sharp,
                                         size: 20.0,
@@ -827,17 +812,11 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                         text: TextSpan(
                                           children: [
                                             TextSpan(
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                'xskwu0ry' /* Already have an account?  */,
-                                              ),
+                                              text: 'Already have an account? ',
                                               style: TextStyle(),
                                             ),
                                             TextSpan(
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                'xffn2hqt' /* Sign In here */,
-                                              ),
+                                              text: 'Sign In here',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium

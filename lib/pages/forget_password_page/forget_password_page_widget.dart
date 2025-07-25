@@ -65,9 +65,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
         title: Padding(
           padding: EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
           child: Text(
-            FFLocalizations.of(context).getText(
-              'jwi9maak' /* Back */,
-            ),
+            'Back',
             style: FlutterFlowTheme.of(context).displaySmall.override(
                   font: GoogleFonts.outfit(
                     fontWeight: FontWeight.w600,
@@ -131,9 +129,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 0.0, 0.0),
                           child: Text(
-                            FFLocalizations.of(context).getText(
-                              'bmyzehn0' /* Back */,
-                            ),
+                            'Back',
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -160,9 +156,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                 child: Text(
-                  FFLocalizations.of(context).getText(
-                    'mmmsd896' /* Forgot Password */,
-                  ),
+                  'Forgot Password',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         font: GoogleFonts.outfit(
                           fontWeight: FontWeight.w500,
@@ -183,9 +177,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
                 child: Text(
-                  FFLocalizations.of(context).getText(
-                    'v6pt8w3j' /* We will send you an email with... */,
-                  ),
+                  'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
                   style: FlutterFlowTheme.of(context).labelMedium.override(
                         font: GoogleFonts.plusJakartaSans(
                           fontWeight: FontWeight.w500,
@@ -212,9 +204,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
                     autofillHints: [AutofillHints.email],
                     obscureText: false,
                     decoration: InputDecoration(
-                      labelText: FFLocalizations.of(context).getText(
-                        'icb7wyon' /* Your email address... */,
-                      ),
+                      labelText: 'Your email address...',
                       labelStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 font: GoogleFonts.plusJakartaSans(
@@ -231,9 +221,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
                                     .labelMedium
                                     .fontStyle,
                               ),
-                      hintText: FFLocalizations.of(context).getText(
-                        '372po031' /* Enter your email... */,
-                      ),
+                      hintText: 'Enter your email...',
                       hintStyle:
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 font: GoogleFonts.plusJakartaSans(
@@ -326,9 +314,7 @@ class _ForgetPasswordPageWidgetState extends State<ForgetPasswordPageWidget> {
                         context: context,
                       );
                     },
-                    text: FFLocalizations.of(context).getText(
-                      '048nlg1q' /* Send Link */,
-                    ),
+                    text: 'Send Link',
                     options: FFButtonOptions(
                       width: 270.0,
                       height: 50.0,

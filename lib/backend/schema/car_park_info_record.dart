@@ -15,79 +15,91 @@ class CarParkInfoRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "CarParkBasement" field.
-  bool? _carParkBasement;
-  bool get carParkBasement => _carParkBasement ?? false;
+  // "address" field.
+  String? _address;
+  String get address => _address ?? '';
+  bool hasAddress() => _address != null;
+
+  // "car_park_basement" field.
+  String? _carParkBasement;
+  String get carParkBasement => _carParkBasement ?? '';
   bool hasCarParkBasement() => _carParkBasement != null;
 
-  // "CarParkDecks" field.
+  // "car_park_decks" field.
   int? _carParkDecks;
   int get carParkDecks => _carParkDecks ?? 0;
   bool hasCarParkDecks() => _carParkDecks != null;
 
-  // "CarParkID" field.
-  int? _carParkID;
-  int get carParkID => _carParkID ?? 0;
-  bool hasCarParkID() => _carParkID != null;
+  // "car_park_no" field.
+  String? _carParkNo;
+  String get carParkNo => _carParkNo ?? '';
+  bool hasCarParkNo() => _carParkNo != null;
 
-  // "Field" field.
-  String? _field;
-  String get field => _field ?? '';
-  bool hasField() => _field != null;
+  // "car_park_type" field.
+  String? _carParkType;
+  String get carParkType => _carParkType ?? '';
+  bool hasCarParkType() => _carParkType != null;
 
-  // "GantryHeight" field.
+  // "free_parking" field.
+  String? _freeParking;
+  String get freeParking => _freeParking ?? '';
+  bool hasFreeParking() => _freeParking != null;
+
+  // "gantry_height" field.
   double? _gantryHeight;
   double get gantryHeight => _gantryHeight ?? 0.0;
   bool hasGantryHeight() => _gantryHeight != null;
 
-  // "NightParking" field.
-  bool? _nightParking;
-  bool get nightParking => _nightParking ?? false;
+  // "lat" field.
+  double? _lat;
+  double get lat => _lat ?? 0.0;
+  bool hasLat() => _lat != null;
+
+  // "lng" field.
+  double? _lng;
+  double get lng => _lng ?? 0.0;
+  bool hasLng() => _lng != null;
+
+  // "night_parking" field.
+  String? _nightParking;
+  String get nightParking => _nightParking ?? '';
   bool hasNightParking() => _nightParking != null;
 
-  // "ShortTermParking" field.
-  bool? _shortTermParking;
-  bool get shortTermParking => _shortTermParking ?? false;
+  // "short_term_parking" field.
+  String? _shortTermParking;
+  String get shortTermParking => _shortTermParking ?? '';
   bool hasShortTermParking() => _shortTermParking != null;
 
-  // "Type" field.
-  String? _type;
-  String get type => _type ?? '';
-  bool hasType() => _type != null;
-
-  // "TypeOfParkingSystem" field.
+  // "type_of_parking_system" field.
   String? _typeOfParkingSystem;
   String get typeOfParkingSystem => _typeOfParkingSystem ?? '';
   bool hasTypeOfParkingSystem() => _typeOfParkingSystem != null;
 
-  // "currentLocation" field.
-  LatLng? _currentLocation;
-  LatLng? get currentLocation => _currentLocation;
-  bool hasCurrentLocation() => _currentLocation != null;
+  // "x_coord" field.
+  double? _xCoord;
+  double get xCoord => _xCoord ?? 0.0;
+  bool hasXCoord() => _xCoord != null;
 
-  // "userLat" field.
-  double? _userLat;
-  double get userLat => _userLat ?? 0.0;
-  bool hasUserLat() => _userLat != null;
-
-  // "userLng" field.
-  double? _userLng;
-  double get userLng => _userLng ?? 0.0;
-  bool hasUserLng() => _userLng != null;
+  // "y_coord" field.
+  double? _yCoord;
+  double get yCoord => _yCoord ?? 0.0;
+  bool hasYCoord() => _yCoord != null;
 
   void _initializeFields() {
-    _carParkBasement = snapshotData['CarParkBasement'] as bool?;
-    _carParkDecks = castToType<int>(snapshotData['CarParkDecks']);
-    _carParkID = castToType<int>(snapshotData['CarParkID']);
-    _field = snapshotData['Field'] as String?;
-    _gantryHeight = castToType<double>(snapshotData['GantryHeight']);
-    _nightParking = snapshotData['NightParking'] as bool?;
-    _shortTermParking = snapshotData['ShortTermParking'] as bool?;
-    _type = snapshotData['Type'] as String?;
-    _typeOfParkingSystem = snapshotData['TypeOfParkingSystem'] as String?;
-    _currentLocation = snapshotData['currentLocation'] as LatLng?;
-    _userLat = castToType<double>(snapshotData['userLat']);
-    _userLng = castToType<double>(snapshotData['userLng']);
+    _address = snapshotData['address'] as String?;
+    _carParkBasement = snapshotData['car_park_basement'] as String?;
+    _carParkDecks = castToType<int>(snapshotData['car_park_decks']);
+    _carParkNo = snapshotData['car_park_no'] as String?;
+    _carParkType = snapshotData['car_park_type'] as String?;
+    _freeParking = snapshotData['free_parking'] as String?;
+    _gantryHeight = castToType<double>(snapshotData['gantry_height']);
+    _lat = castToType<double>(snapshotData['lat']);
+    _lng = castToType<double>(snapshotData['lng']);
+    _nightParking = snapshotData['night_parking'] as String?;
+    _shortTermParking = snapshotData['short_term_parking'] as String?;
+    _typeOfParkingSystem = snapshotData['type_of_parking_system'] as String?;
+    _xCoord = castToType<double>(snapshotData['x_coord']);
+    _yCoord = castToType<double>(snapshotData['y_coord']);
   }
 
   static CollectionReference get collection =>
@@ -125,33 +137,37 @@ class CarParkInfoRecord extends FirestoreRecord {
 }
 
 Map<String, dynamic> createCarParkInfoRecordData({
-  bool? carParkBasement,
+  String? address,
+  String? carParkBasement,
   int? carParkDecks,
-  int? carParkID,
-  String? field,
+  String? carParkNo,
+  String? carParkType,
+  String? freeParking,
   double? gantryHeight,
-  bool? nightParking,
-  bool? shortTermParking,
-  String? type,
+  double? lat,
+  double? lng,
+  String? nightParking,
+  String? shortTermParking,
   String? typeOfParkingSystem,
-  LatLng? currentLocation,
-  double? userLat,
-  double? userLng,
+  double? xCoord,
+  double? yCoord,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
-      'CarParkBasement': carParkBasement,
-      'CarParkDecks': carParkDecks,
-      'CarParkID': carParkID,
-      'Field': field,
-      'GantryHeight': gantryHeight,
-      'NightParking': nightParking,
-      'ShortTermParking': shortTermParking,
-      'Type': type,
-      'TypeOfParkingSystem': typeOfParkingSystem,
-      'currentLocation': currentLocation,
-      'userLat': userLat,
-      'userLng': userLng,
+      'address': address,
+      'car_park_basement': carParkBasement,
+      'car_park_decks': carParkDecks,
+      'car_park_no': carParkNo,
+      'car_park_type': carParkType,
+      'free_parking': freeParking,
+      'gantry_height': gantryHeight,
+      'lat': lat,
+      'lng': lng,
+      'night_parking': nightParking,
+      'short_term_parking': shortTermParking,
+      'type_of_parking_system': typeOfParkingSystem,
+      'x_coord': xCoord,
+      'y_coord': yCoord,
     }.withoutNulls,
   );
 
@@ -163,34 +179,38 @@ class CarParkInfoRecordDocumentEquality implements Equality<CarParkInfoRecord> {
 
   @override
   bool equals(CarParkInfoRecord? e1, CarParkInfoRecord? e2) {
-    return e1?.carParkBasement == e2?.carParkBasement &&
+    return e1?.address == e2?.address &&
+        e1?.carParkBasement == e2?.carParkBasement &&
         e1?.carParkDecks == e2?.carParkDecks &&
-        e1?.carParkID == e2?.carParkID &&
-        e1?.field == e2?.field &&
+        e1?.carParkNo == e2?.carParkNo &&
+        e1?.carParkType == e2?.carParkType &&
+        e1?.freeParking == e2?.freeParking &&
         e1?.gantryHeight == e2?.gantryHeight &&
+        e1?.lat == e2?.lat &&
+        e1?.lng == e2?.lng &&
         e1?.nightParking == e2?.nightParking &&
         e1?.shortTermParking == e2?.shortTermParking &&
-        e1?.type == e2?.type &&
         e1?.typeOfParkingSystem == e2?.typeOfParkingSystem &&
-        e1?.currentLocation == e2?.currentLocation &&
-        e1?.userLat == e2?.userLat &&
-        e1?.userLng == e2?.userLng;
+        e1?.xCoord == e2?.xCoord &&
+        e1?.yCoord == e2?.yCoord;
   }
 
   @override
   int hash(CarParkInfoRecord? e) => const ListEquality().hash([
+        e?.address,
         e?.carParkBasement,
         e?.carParkDecks,
-        e?.carParkID,
-        e?.field,
+        e?.carParkNo,
+        e?.carParkType,
+        e?.freeParking,
         e?.gantryHeight,
+        e?.lat,
+        e?.lng,
         e?.nightParking,
         e?.shortTermParking,
-        e?.type,
         e?.typeOfParkingSystem,
-        e?.currentLocation,
-        e?.userLat,
-        e?.userLng
+        e?.xCoord,
+        e?.yCoord
       ]);
 
   @override

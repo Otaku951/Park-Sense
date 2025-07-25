@@ -1,25 +1,19 @@
-import '/flutter_flow/flutter_flow_google_map.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/index.dart';
-import 'homepage_widget.dart' show HomepageWidget;
+import 'profile_widget.dart' show ProfileWidget;
 import 'package:flutter/material.dart';
 
-class HomepageModel extends FlutterFlowModel<HomepageWidget> {
-  ///  Local state fields for this page.
-
-  double? userLat = 1.292536;
-
-  double? userLng = 103.857193;
-
+class ProfileModel extends FlutterFlowModel<ProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // State field(s) for GoogleMap widget.
-  LatLng? googleMapsCenter;
-  final googleMapsController = Completer<GoogleMapController>();
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
+  bool isDataUploading_uploadDataLp8 = false;
+  FFUploadedFile uploadedLocalFile_uploadDataLp8 =
+      FFUploadedFile(bytes: Uint8List.fromList([]));
+  String uploadedFileUrl_uploadDataLp8 = '';
 
   @override
   void initState(BuildContext context) {}

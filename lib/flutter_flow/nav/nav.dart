@@ -90,11 +90,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ProfileWidget(),
         ),
         FFRoute(
-          name: EditProfileWidget.routeName,
-          path: EditProfileWidget.routePath,
-          builder: (context, params) => EditProfileWidget(),
-        ),
-        FFRoute(
           name: HistoryWidget.routeName,
           path: HistoryWidget.routePath,
           builder: (context, params) => HistoryWidget(),
