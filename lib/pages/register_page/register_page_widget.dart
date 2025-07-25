@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -590,6 +591,13 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                         if (user == null) {
                                           return;
                                         }
+
+                                        await UserInfoRecord.collection
+                                            .doc(user.uid)
+                                            .update(createUserInfoRecordData(
+                                              photoUrl:
+                                                  'https://cdn-icons-png.flaticon.com/512/149/149071.png',
+                                            ));
 
                                         context.goNamedAuth(
                                             HomepageWidget.routeName,
