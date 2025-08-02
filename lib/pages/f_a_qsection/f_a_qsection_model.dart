@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'f_a_qsection_copy_widget.dart' show FAQsectionCopyWidget;
+import 'f_a_qsection_widget.dart' show FAQsectionWidget;
 import 'package:flutter/material.dart';
 
-class FAQsectionCopyModel extends FlutterFlowModel<FAQsectionCopyWidget> {
+class FAQsectionModel extends FlutterFlowModel<FAQsectionWidget> {
   ///  Local state fields for this page.
 
   String selectedCategory = '';

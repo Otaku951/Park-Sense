@@ -243,7 +243,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                           size: 24.0,
                         ),
                         onPressed: () async {
-                          context.pushNamed(FAQsectionCopyWidget.routeName);
+                          context.pushNamed(FAQsectionWidget.routeName);
                         },
                       ),
                     ),

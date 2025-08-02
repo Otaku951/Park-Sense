@@ -6,28 +6,28 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'f_a_qsection_copy_model.dart';
-export 'f_a_qsection_copy_model.dart';
+import 'f_a_qsection_model.dart';
+export 'f_a_qsection_model.dart';
 
-class FAQsectionCopyWidget extends StatefulWidget {
-  const FAQsectionCopyWidget({super.key});
+class FAQsectionWidget extends StatefulWidget {
+  const FAQsectionWidget({super.key});
 
-  static String routeName = 'FAQsectionCopy';
-  static String routePath = '/fAQsectionCopy';
+  static String routeName = 'FAQsection';
+  static String routePath = '/fAQsection';
 
   @override
-  State<FAQsectionCopyWidget> createState() => _FAQsectionCopyWidgetState();
+  State<FAQsectionWidget> createState() => _FAQsectionWidgetState();
 }
 
-class _FAQsectionCopyWidgetState extends State<FAQsectionCopyWidget> {
-  late FAQsectionCopyModel _model;
+class _FAQsectionWidgetState extends State<FAQsectionWidget> {
+  late FAQsectionModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FAQsectionCopyModel());
+    _model = createModel(context, () => FAQsectionModel());
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();

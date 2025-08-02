@@ -95,11 +95,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HistoryWidget(),
         ),
         FFRoute(
-          name: FAQsectionWidget.routeName,
-          path: FAQsectionWidget.routePath,
-          builder: (context, params) => FAQsectionWidget(),
-        ),
-        FFRoute(
           name: CarparkWidget.routeName,
           path: CarparkWidget.routePath,
           builder: (context, params) => CarparkWidget(),
@@ -125,9 +120,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ForgetPasswordPageWidget(),
         ),
         FFRoute(
-          name: FAQsectionCopyWidget.routeName,
-          path: FAQsectionCopyWidget.routePath,
-          builder: (context, params) => FAQsectionCopyWidget(),
+          name: FAQsectionWidget.routeName,
+          path: FAQsectionWidget.routePath,
+          builder: (context, params) => FAQsectionWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

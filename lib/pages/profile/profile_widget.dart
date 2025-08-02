@@ -658,7 +658,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    context.pushNamed(FAQsectionCopyWidget.routeName);
+                    context.pushNamed(FAQsectionWidget.routeName);
                   },
                   child: Card(
                     clipBehavior: Clip.antiAliasWithSaveLayer,
