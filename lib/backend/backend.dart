@@ -6,10 +6,10 @@ import '../flutter_flow/flutter_flow_util.dart';
 import 'schema/util/firestore_util.dart';
 
 import 'schema/user_info_record.dart';
-import 'schema/h_d_b_carpark_informatation_record.dart';
-import 'schema/h_d_b_carpark_x_coord_record.dart';
-import 'schema/h_d_b_carpark_y_coord_record.dart';
 import 'schema/car_park_info_record.dart';
+import 'schema/faq_record.dart';
+import 'schema/feedback_record.dart';
+import 'schema/h_d_b_carpark_information_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart' hide Order;
@@ -19,10 +19,10 @@ export 'schema/util/firestore_util.dart';
 export 'schema/util/schema_util.dart';
 
 export 'schema/user_info_record.dart';
-export 'schema/h_d_b_carpark_informatation_record.dart';
-export 'schema/h_d_b_carpark_x_coord_record.dart';
-export 'schema/h_d_b_carpark_y_coord_record.dart';
 export 'schema/car_park_info_record.dart';
+export 'schema/faq_record.dart';
+export 'schema/feedback_record.dart';
+export 'schema/h_d_b_carpark_information_record.dart';
 
 /// Functions to query UserInfoRecords (as a Stream and as a Future).
 Future<int> queryUserInfoRecordCount({
@@ -61,118 +61,6 @@ Future<List<UserInfoRecord>> queryUserInfoRecordOnce({
       singleRecord: singleRecord,
     );
 
-/// Functions to query HDBCarparkInformatationRecords (as a Stream and as a Future).
-Future<int> queryHDBCarparkInformatationRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      HDBCarparkInformatationRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<HDBCarparkInformatationRecord>> queryHDBCarparkInformatationRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      HDBCarparkInformatationRecord.collection,
-      HDBCarparkInformatationRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<HDBCarparkInformatationRecord>>
-    queryHDBCarparkInformatationRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-        queryCollectionOnce(
-          HDBCarparkInformatationRecord.collection,
-          HDBCarparkInformatationRecord.fromSnapshot,
-          queryBuilder: queryBuilder,
-          limit: limit,
-          singleRecord: singleRecord,
-        );
-
-/// Functions to query HDBCarparkXCoordRecords (as a Stream and as a Future).
-Future<int> queryHDBCarparkXCoordRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      HDBCarparkXCoordRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<HDBCarparkXCoordRecord>> queryHDBCarparkXCoordRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      HDBCarparkXCoordRecord.collection,
-      HDBCarparkXCoordRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<HDBCarparkXCoordRecord>> queryHDBCarparkXCoordRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      HDBCarparkXCoordRecord.collection,
-      HDBCarparkXCoordRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-/// Functions to query HDBCarparkYCoordRecords (as a Stream and as a Future).
-Future<int> queryHDBCarparkYCoordRecordCount({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-}) =>
-    queryCollectionCount(
-      HDBCarparkYCoordRecord.collection,
-      queryBuilder: queryBuilder,
-      limit: limit,
-    );
-
-Stream<List<HDBCarparkYCoordRecord>> queryHDBCarparkYCoordRecord({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollection(
-      HDBCarparkYCoordRecord.collection,
-      HDBCarparkYCoordRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
-Future<List<HDBCarparkYCoordRecord>> queryHDBCarparkYCoordRecordOnce({
-  Query Function(Query)? queryBuilder,
-  int limit = -1,
-  bool singleRecord = false,
-}) =>
-    queryCollectionOnce(
-      HDBCarparkYCoordRecord.collection,
-      HDBCarparkYCoordRecord.fromSnapshot,
-      queryBuilder: queryBuilder,
-      limit: limit,
-      singleRecord: singleRecord,
-    );
-
 /// Functions to query CarParkInfoRecords (as a Stream and as a Future).
 Future<int> queryCarParkInfoRecordCount({
   Query Function(Query)? queryBuilder,
@@ -205,6 +93,117 @@ Future<List<CarParkInfoRecord>> queryCarParkInfoRecordOnce({
     queryCollectionOnce(
       CarParkInfoRecord.collection,
       CarParkInfoRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query FaqRecords (as a Stream and as a Future).
+Future<int> queryFaqRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      FaqRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<FaqRecord>> queryFaqRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      FaqRecord.collection,
+      FaqRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<FaqRecord>> queryFaqRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      FaqRecord.collection,
+      FaqRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query FeedbackRecords (as a Stream and as a Future).
+Future<int> queryFeedbackRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      FeedbackRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<FeedbackRecord>> queryFeedbackRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      FeedbackRecord.collection,
+      FeedbackRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<FeedbackRecord>> queryFeedbackRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      FeedbackRecord.collection,
+      FeedbackRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query HDBCarparkInformationRecords (as a Stream and as a Future).
+Future<int> queryHDBCarparkInformationRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      HDBCarparkInformationRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<HDBCarparkInformationRecord>> queryHDBCarparkInformationRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      HDBCarparkInformationRecord.collection,
+      HDBCarparkInformationRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<HDBCarparkInformationRecord>> queryHDBCarparkInformationRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      HDBCarparkInformationRecord.collection,
+      HDBCarparkInformationRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

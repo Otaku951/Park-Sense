@@ -5,7 +5,7 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: FirebaseOptions(
-            apiKey: "AIzaSyAmb3Y0ZaU8snEQrP5TDU3ZO2h11WeI8-c",
+            apiKey: "AIzaSyCI0cBCltpzeKCz3FGBloxKawq94N9Xcjo",
             authDomain: "parksense-53ba7.firebaseapp.com",
             projectId: "parksense-53ba7",
             storageBucket: "parksense-53ba7.firebasestorage.app",

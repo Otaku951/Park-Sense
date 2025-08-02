@@ -599,8 +599,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget>
                                                   'https://cdn-icons-png.flaticon.com/512/149/149071.png',
                                             ));
 
-                                        context.goNamedAuth(
-                                            HomepageWidget.routeName,
+                                        context.pushNamedAuth(
+                                            ProfileWidget.routeName,
                                             context.mounted);
                                       },
                                       text: 'Create Account',

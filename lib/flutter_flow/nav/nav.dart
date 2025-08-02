@@ -123,6 +123,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ForgetPasswordPageWidget.routeName,
           path: ForgetPasswordPageWidget.routePath,
           builder: (context, params) => ForgetPasswordPageWidget(),
+        ),
+        FFRoute(
+          name: FAQsectionCopyWidget.routeName,
+          path: FAQsectionCopyWidget.routePath,
+          builder: (context, params) => FAQsectionCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

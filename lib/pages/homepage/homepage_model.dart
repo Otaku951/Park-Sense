@@ -68,8 +68,6 @@ class HomepageModel extends FlutterFlowModel<HomepageWidget> {
   FFPlace placePickerValue = FFPlace();
   // Stores action output result for [Backend Call - API (NearbySearch)] action in IconButton widget.
   ApiCallResponse? latlng;
-  // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.
-  List<HDBCarparkInformatationRecord>? zzz;
   // Stores action output result for [Custom Action - boundingBox] action in IconButton widget.
   List<double>? bound;
   // Stores action output result for [Firestore Query - Query a collection] action in IconButton widget.

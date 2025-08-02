@@ -7,8 +7,8 @@ import '/backend/schema/util/firestore_util.dart';
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
-class HDBCarparkInformatationRecord extends FirestoreRecord {
-  HDBCarparkInformatationRecord._(
+class HDBCarparkInformationRecord extends FirestoreRecord {
+  HDBCarparkInformationRecord._(
     DocumentReference reference,
     Map<String, dynamic> data,
   ) : super(reference, data) {
@@ -75,6 +75,16 @@ class HDBCarparkInformatationRecord extends FirestoreRecord {
   String get carParkBasement => _carParkBasement ?? '';
   bool hasCarParkBasement() => _carParkBasement != null;
 
+  // "conv_lat" field.
+  double? _convLat;
+  double get convLat => _convLat ?? 0.0;
+  bool hasConvLat() => _convLat != null;
+
+  // "conv_lng" field.
+  double? _convLng;
+  double get convLng => _convLng ?? 0.0;
+  bool hasConvLng() => _convLng != null;
+
   void _initializeFields() {
     _carParkNo = snapshotData['car_park_no'] as String?;
     _address = snapshotData['address'] as String?;
@@ -88,46 +98,47 @@ class HDBCarparkInformatationRecord extends FirestoreRecord {
     _carParkDecks = castToType<int>(snapshotData['car_park_decks']);
     _gantryHeight = castToType<double>(snapshotData['gantry_height']);
     _carParkBasement = snapshotData['car_park_basement'] as String?;
+    _convLat = castToType<double>(snapshotData['conv_lat']);
+    _convLng = castToType<double>(snapshotData['conv_lng']);
   }
 
   static CollectionReference get collection =>
-      FirebaseFirestore.instance.collection('HDB_Carpark_Informatation');
+      FirebaseFirestore.instance.collection('HDBCarparkInformation');
 
-  static Stream<HDBCarparkInformatationRecord> getDocument(
+  static Stream<HDBCarparkInformationRecord> getDocument(
           DocumentReference ref) =>
-      ref.snapshots().map((s) => HDBCarparkInformatationRecord.fromSnapshot(s));
+      ref.snapshots().map((s) => HDBCarparkInformationRecord.fromSnapshot(s));
 
-  static Future<HDBCarparkInformatationRecord> getDocumentOnce(
+  static Future<HDBCarparkInformationRecord> getDocumentOnce(
           DocumentReference ref) =>
-      ref.get().then((s) => HDBCarparkInformatationRecord.fromSnapshot(s));
+      ref.get().then((s) => HDBCarparkInformationRecord.fromSnapshot(s));
 
-  static HDBCarparkInformatationRecord fromSnapshot(
-          DocumentSnapshot snapshot) =>
-      HDBCarparkInformatationRecord._(
+  static HDBCarparkInformationRecord fromSnapshot(DocumentSnapshot snapshot) =>
+      HDBCarparkInformationRecord._(
         snapshot.reference,
         mapFromFirestore(snapshot.data() as Map<String, dynamic>),
       );
 
-  static HDBCarparkInformatationRecord getDocumentFromData(
+  static HDBCarparkInformationRecord getDocumentFromData(
     Map<String, dynamic> data,
     DocumentReference reference,
   ) =>
-      HDBCarparkInformatationRecord._(reference, mapFromFirestore(data));
+      HDBCarparkInformationRecord._(reference, mapFromFirestore(data));
 
   @override
   String toString() =>
-      'HDBCarparkInformatationRecord(reference: ${reference.path}, data: $snapshotData)';
+      'HDBCarparkInformationRecord(reference: ${reference.path}, data: $snapshotData)';
 
   @override
   int get hashCode => reference.path.hashCode;
 
   @override
   bool operator ==(other) =>
-      other is HDBCarparkInformatationRecord &&
+      other is HDBCarparkInformationRecord &&
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createHDBCarparkInformatationRecordData({
+Map<String, dynamic> createHDBCarparkInformationRecordData({
   String? carParkNo,
   String? address,
   double? xCoord,
@@ -140,6 +151,8 @@ Map<String, dynamic> createHDBCarparkInformatationRecordData({
   int? carParkDecks,
   double? gantryHeight,
   String? carParkBasement,
+  double? convLat,
+  double? convLng,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -155,19 +168,21 @@ Map<String, dynamic> createHDBCarparkInformatationRecordData({
       'car_park_decks': carParkDecks,
       'gantry_height': gantryHeight,
       'car_park_basement': carParkBasement,
+      'conv_lat': convLat,
+      'conv_lng': convLng,
     }.withoutNulls,
   );
 
   return firestoreData;
 }
 
-class HDBCarparkInformatationRecordDocumentEquality
-    implements Equality<HDBCarparkInformatationRecord> {
-  const HDBCarparkInformatationRecordDocumentEquality();
+class HDBCarparkInformationRecordDocumentEquality
+    implements Equality<HDBCarparkInformationRecord> {
+  const HDBCarparkInformationRecordDocumentEquality();
 
   @override
   bool equals(
-      HDBCarparkInformatationRecord? e1, HDBCarparkInformatationRecord? e2) {
+      HDBCarparkInformationRecord? e1, HDBCarparkInformationRecord? e2) {
     return e1?.carParkNo == e2?.carParkNo &&
         e1?.address == e2?.address &&
         e1?.xCoord == e2?.xCoord &&
@@ -179,11 +194,13 @@ class HDBCarparkInformatationRecordDocumentEquality
         e1?.nightParking == e2?.nightParking &&
         e1?.carParkDecks == e2?.carParkDecks &&
         e1?.gantryHeight == e2?.gantryHeight &&
-        e1?.carParkBasement == e2?.carParkBasement;
+        e1?.carParkBasement == e2?.carParkBasement &&
+        e1?.convLat == e2?.convLat &&
+        e1?.convLng == e2?.convLng;
   }
 
   @override
-  int hash(HDBCarparkInformatationRecord? e) => const ListEquality().hash([
+  int hash(HDBCarparkInformationRecord? e) => const ListEquality().hash([
         e?.carParkNo,
         e?.address,
         e?.xCoord,
@@ -195,9 +212,11 @@ class HDBCarparkInformatationRecordDocumentEquality
         e?.nightParking,
         e?.carParkDecks,
         e?.gantryHeight,
-        e?.carParkBasement
+        e?.carParkBasement,
+        e?.convLat,
+        e?.convLng
       ]);
 
   @override
-  bool isValidKey(Object? o) => o is HDBCarparkInformatationRecord;
+  bool isValidKey(Object? o) => o is HDBCarparkInformationRecord;
 }

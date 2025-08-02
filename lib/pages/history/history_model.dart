@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'carpark_widget.dart' show CarparkWidget;
+import '/index.dart';
+import 'history_widget.dart' show HistoryWidget;
 import 'package:flutter/material.dart';
 
-class CarparkModel extends FlutterFlowModel<CarparkWidget> {
+class HistoryModel extends FlutterFlowModel<HistoryWidget> {
   @override
   void initState(BuildContext context) {}
 

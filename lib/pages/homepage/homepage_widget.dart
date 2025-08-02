@@ -49,14 +49,14 @@ class _HomepageWidgetState extends State<HomepageWidget> {
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFF979292),
+      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       endDrawer: Drawer(
         elevation: 16.0,
         child: Container(
           width: 100.0,
           height: 100.0,
           decoration: BoxDecoration(
-            color: Color(0xFFEECEEE),
+            color: FlutterFlowTheme.of(context).primaryBackground,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -77,6 +77,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
@@ -84,7 +85,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                       padding:
                           EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                       child: Text(
-                        'My Accounnt',
+                        'My Account',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               font: GoogleFonts.inter(
                                 fontWeight: FlutterFlowTheme.of(context)
@@ -110,11 +111,10 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(110.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: FlutterFlowIconButton(
                         borderRadius: 8.0,
                         buttonSize: 40.0,
-                        fillColor: Color(0xFFEECEEE),
                         icon: Icon(
                           Icons.chevron_right,
                           color: Colors.black,
@@ -135,59 +135,61 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                   color: FlutterFlowTheme.of(context).alternate,
                 ),
               ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
-                      child: Text(
-                        'Parking History',
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              font: GoogleFonts.inter(
-                                fontWeight: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontWeight,
-                                fontStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .fontStyle,
-                              ),
-                              fontSize: 20.0,
-                              letterSpacing: 0.0,
-                              fontWeight: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .fontWeight,
-                              fontStyle: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .fontStyle,
-                            ),
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(90.0, 0.0, 0.0, 0.0),
-                      child: FlutterFlowIconButton(
-                        borderRadius: 8.0,
-                        buttonSize: 40.0,
-                        fillColor: Color(0xFFEECEEE),
-                        icon: Icon(
-                          Icons.chevron_right,
-                          color: Colors.black,
-                          size: 24.0,
+              if (currentUserEmail != '')
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        child: Text(
+                          'Parking History',
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    font: GoogleFonts.inter(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .fontStyle,
+                                    ),
+                                    fontSize: 20.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .fontStyle,
+                                  ),
                         ),
-                        onPressed: () async {
-                          context.pushNamed(HistoryWidget.routeName);
-                        },
                       ),
                     ),
-                  ),
-                ],
-              ),
+                    Align(
+                      alignment: AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                        child: FlutterFlowIconButton(
+                          borderRadius: 8.0,
+                          buttonSize: 40.0,
+                          icon: Icon(
+                            Icons.chevron_right,
+                            color: Colors.black,
+                            size: 24.0,
+                          ),
+                          onPressed: () async {
+                            context.pushNamed(HistoryWidget.routeName);
+                          },
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               Opacity(
                 opacity: 0.0,
                 child: Divider(
@@ -197,6 +199,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Align(
                     alignment: AlignmentDirectional(0.0, 0.0),
@@ -230,18 +233,17 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                     alignment: AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(120.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                       child: FlutterFlowIconButton(
                         borderRadius: 8.0,
                         buttonSize: 40.0,
-                        fillColor: Color(0xFFEECEEE),
                         icon: Icon(
                           Icons.chevron_right,
                           color: Colors.black,
                           size: 24.0,
                         ),
                         onPressed: () async {
-                          context.pushNamed(FAQsectionWidget.routeName);
+                          context.pushNamed(FAQsectionCopyWidget.routeName);
                         },
                       ),
                     ),
@@ -249,10 +251,10 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                 ],
               ),
               Align(
-                alignment: AlignmentDirectional(1.0, 0.0),
+                alignment: AlignmentDirectional(1.0, 1.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 630.0, 10.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(0.0, 600.0, 10.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -334,6 +336,17 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                 _model.filteredLatLngList?.toList(),
                                 _model.googleMapsCenter);
                         safeSetState(() {});
+                        FFAppState().addToParkingHistoryList(
+                            _model.filteredAvailabilitylist
+                                .where((e) =>
+                                    _model.selectedCarpark ==
+                                    getJsonField(
+                                      e,
+                                      r'''$.carpark_number''',
+                                    ).toString())
+                                .toList()
+                                .firstOrNull!);
+                        safeSetState(() {});
                       },
                     ),
                   )
@@ -400,11 +413,11 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                             children: [
                               FlutterFlowPlacePicker(
                                 iOSGoogleMapsApiKey:
-                                    'AIzaSyBo5bhXlQlV47qe2x3CXTIEn9YGoGX2png',
+                                    'AIzaSyDsvijJ0j1H2KbXggYG5v58HrqOCzdwVoo',
                                 androidGoogleMapsApiKey:
-                                    'AIzaSyC64O8M3ViCBtA8NfkHBQSSRVg6Qs8wo6E',
+                                    'AIzaSyDoyYNs2YduiHPRdfuy4kI4ofKAj9KSOA4',
                                 webGoogleMapsApiKey:
-                                    'AIzaSyAci7JEqgElYs6RM1X6G6FGb7hROilvIjc',
+                                    'AIzaSyCI0cBCltpzeKCz3FGBloxKawq94N9Xcjo',
                                 onSelect: (place) async {
                                   safeSetState(
                                       () => _model.placePickerValue = place);
@@ -471,10 +484,6 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                           .placePickerValue.latLng
                                           .toGoogleMaps()),
                                     ),
-                                  );
-                                  _model.zzz =
-                                      await queryHDBCarparkInformatationRecordOnce(
-                                    limit: 100,
                                   );
                                   _model.bound = await actions.boundingBox(
                                     _model.placePickerValue.latLng,
@@ -615,7 +624,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                               _model.selectedCarpark != '')
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
-                              buttonSize: 45.0,
+                              buttonSize: 40.0,
                               icon: Icon(
                                 Icons.cancel_outlined,
                                 color: FlutterFlowTheme.of(context).primary,
@@ -636,12 +645,9 @@ class _HomepageWidgetState extends State<HomepageWidget> {
           ),
           Container(
             width: double.infinity,
-            height: MediaQuery.sizeOf(context).height * 0.304,
+            height: MediaQuery.sizeOf(context).height * 0.30,
             decoration: BoxDecoration(
               color: Color(0xFFEEEEEE),
-              border: Border.all(
-                color: FlutterFlowTheme.of(context).primaryText,
-              ),
             ),
             child: Builder(
               builder: (context) {
@@ -672,64 +678,101 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Material(
-                            color: Colors.transparent,
-                            elevation: 2.0,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12.0),
-                            ),
-                            child: Container(
-                              width: MediaQuery.sizeOf(context).width * 1.0,
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).primary,
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              _model.selectedCarpark = getJsonField(
+                                nearbyParkingAvailabilityItem,
+                                r'''$.carpark_number''',
+                              ).toString();
+                              safeSetState(() {});
+                              FFAppState().addToParkingHistoryList(getJsonField(
+                                nearbyParkingAvailabilityItem,
+                                r'''$''',
+                              ));
+                              safeSetState(() {});
+
+                              context.pushNamed(CarparkWidget.routeName);
+                            },
+                            child: Material(
+                              color: Colors.transparent,
+                              elevation: 2.0,
+                              shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(12.0),
-                                border: Border.all(
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                ),
                               ),
-                              child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    12.0, 12.0, 12.0, 12.0),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Container(
-                                      width: 80.0,
-                                      height: 80.0,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                      ),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.network(
-                                          '',
-                                          width: 80.0,
-                                          height: 80.0,
-                                          fit: BoxFit.cover,
+                              child: Container(
+                                width: MediaQuery.sizeOf(context).width * 0.9,
+                                height: 100.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  borderRadius: BorderRadius.circular(12.0),
+                                  border: Border.all(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      12.0, 12.0, 12.0, 12.0),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Container(
+                                        width: 80.0,
+                                        height: 80.0,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(50.0),
+                                          child: Image.network(
+                                            'https://images.unsplash.com/photo-1695189623087-0f09d5e8fd1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxfHxwJUU1JTlCJUJFJUU2JUEwJTg3fGVufDB8fHx8MTc1MjEzMzcyMXww&ixlib=rb-4.1.0&q=80&w=1080',
+                                            width: 80.0,
+                                            height: 80.0,
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: Column(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            valueOrDefault<String>(
-                                              getJsonField(
-                                                nearbyParkingAvailabilityItem,
-                                                r'''$.carpark_number''',
-                                              )?.toString(),
-                                              'Carpark',
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .titleMedium
-                                                .override(
-                                                  font: GoogleFonts.interTight(
+                                      Expanded(
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              valueOrDefault<String>(
+                                                getJsonField(
+                                                  nearbyParkingAvailabilityItem,
+                                                  r'''$.carpark_number''',
+                                                )?.toString(),
+                                                'Carpark',
+                                              ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleMedium
+                                                  .override(
+                                                    font:
+                                                        GoogleFonts.interTight(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleMedium
+                                                              .fontStyle,
+                                                    ),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryBackground,
+                                                    letterSpacing: 0.0,
                                                     fontWeight:
                                                         FlutterFlowTheme.of(
                                                                 context)
@@ -741,38 +784,111 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                             .titleMedium
                                                             .fontStyle,
                                                   ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryBackground,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .titleMedium
-                                                          .fontStyle,
+                                            ),
+                                            Row(
+                                              mainAxisSize: MainAxisSize.max,
+                                              children: [
+                                                Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Total lots',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodySmall
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Color(
+                                                                0xFFEEEEEE),
+                                                            fontSize: 12.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
+                                                          ),
+                                                    ),
+                                                    Text(
+                                                      valueOrDefault<String>(
+                                                        getJsonField(
+                                                          nearbyParkingAvailabilityItem,
+                                                          r'''$.carpark_info[0].total_lots''',
+                                                        )?.toString(),
+                                                        'Total',
+                                                      ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Colors.white,
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .fontStyle,
+                                                          ),
+                                                    ),
+                                                  ].divide(
+                                                      SizedBox(height: 5.0)),
                                                 ),
-                                          ),
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    'Total lots',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
+                                                Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      'Available',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodySmall
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Color(
+                                                                0xFFEEEEEE),
+                                                            fontSize: 12.0,
+                                                            letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -781,33 +897,34 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                                     .bodySmall
                                                                     .fontStyle,
                                                           ),
-                                                          color:
-                                                              Color(0xFFEEEEEE),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    valueOrDefault<String>(
-                                                      getJsonField(
-                                                        nearbyParkingAvailabilityItem,
-                                                        r'''$.carpark_info[0].total_lots''',
-                                                      )?.toString(),
-                                                      'Total',
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
+                                                    Text(
+                                                      valueOrDefault<String>(
+                                                        getJsonField(
+                                                          nearbyParkingAvailabilityItem,
+                                                          r'''$.carpark_info[0].lots_available''',
+                                                        )?.toString(),
+                                                        'Avail',
+                                                      ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Color(
+                                                                0xFFEEEEEE),
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -816,138 +933,72 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
-                                                          color: Colors.white,
-                                                          fontSize: 14.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                ].divide(SizedBox(height: 5.0)),
-                                              ),
-                                              Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    'Available',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color:
-                                                              Color(0xFFEEEEEE),
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    valueOrDefault<String>(
-                                                      getJsonField(
-                                                        nearbyParkingAvailabilityItem,
-                                                        r'''$.carpark_info[0].lots_available''',
-                                                      )?.toString(),
-                                                      'Avail',
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color:
-                                                              Color(0xFFEEEEEE),
-                                                          fontSize: 14.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                ].divide(SizedBox(height: 5.0)),
-                                              ),
-                                              Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    'Type',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodySmall
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
-                                                            fontWeight:
-                                                                FontWeight.w500,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmall
-                                                                    .fontStyle,
-                                                          ),
-                                                          color: Colors.white,
-                                                          fontSize: 12.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodySmall
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                  Text(
-                                                    valueOrDefault<String>(
-                                                      getJsonField(
-                                                        nearbyParkingAvailabilityItem,
-                                                        r'''$.carpark_info[0].lot_type''',
-                                                      )?.toString(),
+                                                  ].divide(
+                                                      SizedBox(height: 5.0)),
+                                                ),
+                                                Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.max,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text(
                                                       'Type',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodySmall
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmall
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Colors.white,
+                                                            fontSize: 12.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            fontStyle:
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodySmall
+                                                                    .fontStyle,
+                                                          ),
                                                     ),
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .manrope(
+                                                    Text(
+                                                      valueOrDefault<String>(
+                                                        getJsonField(
+                                                          nearbyParkingAvailabilityItem,
+                                                          r'''$.carpark_info[0].lot_type''',
+                                                        )?.toString(),
+                                                        'Type',
+                                                      ),
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            font: GoogleFonts
+                                                                .manrope(
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              fontStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .fontStyle,
+                                                            ),
+                                                            color: Color(
+                                                                0xFFEEEEEE),
+                                                            fontSize: 14.0,
+                                                            letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.w500,
                                                             fontStyle:
@@ -956,27 +1007,17 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                                                     .bodyMedium
                                                                     .fontStyle,
                                                           ),
-                                                          color:
-                                                              Color(0xFFEEEEEE),
-                                                          fontSize: 14.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                  ),
-                                                ].divide(SizedBox(height: 5.0)),
-                                              ),
-                                            ].divide(SizedBox(width: 24.0)),
-                                          ),
-                                        ].divide(SizedBox(height: 8.0)),
+                                                    ),
+                                                  ].divide(
+                                                      SizedBox(height: 5.0)),
+                                                ),
+                                              ].divide(SizedBox(width: 24.0)),
+                                            ),
+                                          ].divide(SizedBox(height: 8.0)),
+                                        ),
                                       ),
-                                    ),
-                                  ].divide(SizedBox(width: 16.0)),
+                                    ].divide(SizedBox(width: 16.0)),
+                                  ),
                                 ),
                               ),
                             ),
